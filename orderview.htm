@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>CDG Environmental</title>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&subset=latin-ext" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <!-- Bootstrap Datepicker -->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" type="text/css" />
+    <!-- Page style -->
+    <link rel="stylesheet" href="css/pagestyle.css" type="text/css" />
+    <!-- Form style -->
+    <link rel="stylesheet" href="css/formstyle.css" type="text/css" /> </head>
+
+<body>
+    <div class="container">
+        <!-- Header Title -->
+        <header class="header">
+     <h1><img src="images/CDG-logo-header.png" width="536" height="67">        </h1> </header>
+        <div class="content">
+            <div class="row">
+               
+                <article class="col-md-12">
+                    <!-- customer -->
+                    <div class="row">
+                       
+                            <form>
+                                <!-- Form Title -->
+                                <div class="form-heading text-center">
+                                    <div class="title">Order View</div>
+                                                                    </div>
+                                <!-- Customer -->
+                               <div class="row">
+								<div class="col-md-6">
+                                        <label>Order #</label>
+                                        <input type="text" /> </div> 
+										</div> 
+										
+									<div class="row">
+								<div class="col-md-6">
+                                          <label class="control-label"><i class="fa fa-calendar"></i> Order Date</label>
+                                        <input type="text" class="datepicker" value=" "> </div> 
+										<div class="col-md-6">
+                                      <label class="control-label"><i class="fa fa-calendar"></i> Delivery Date</label>
+                                        <input type="text" class="datepicker" value=" "> </div>
+                                    </div> 
+									
+									<div class="row">
+								<div class="col-md-12">
+                                        <label>Customer Name</label>
+                                        <input type="text" /> </div> 
+                                    </div>
+									 <div class="row">
+								<div class="col-md-6">
+                                        <label>Warehouse </label>
+                                        <input type="text" /> </div> 
+                                 
+								<div class="col-md-6">
+                                        <label>Consignee </label>
+                                        <input type="text" /> </div> 
+                                 
+                                    </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Ship Date</label>
+                                        <input type="text" /> </div>
+                                    <div class="col-md-6">
+                                         <label>Ship From </label>
+                                        <input type="text" /> </div> 
+                                 
+                                </div>
+									
+                                    <b>GRID
+									Quantity     Size     Part Name     Total Price</b>
+                                 <br><br><br>
+								 <div class="row">
+								<div class="col-md-6">
+                                        <label>Consignee PO</label>
+                                        <input type="text" /> </div> 
+                                    </div>                                <!-- orders -->
+                                <div class="row">
+								 <div class="col-md-6">
+                                        <label>Billed</label>
+										<input type="radio" name="radio1">
+                                                <label>Yes</label> &nbsp;  &nbsp;  &nbsp;                            
+                                                <input type="radio" name="radio1">
+                                                <label>No</label>
+                                            </div>
+											                                       </div>                           
+                        
+                               <div class="row">
+                                     <div class="col-md-6">
+                                       <label>Warehouse </label>
+                                        <input type="text" /> </div> 
+                                 
+                                        </div>
+										
+                                    <div class="col-md-6">
+                               
+                                        <label>PRO #</label>
+                                        <input type="text" /> </div>
+										   
+										    <div class="row">
+								<div class="col-md-6">
+                                        <label>Invoice#</label>
+                                        <input type="text" /> </div> 
+                                 
+								<div class="col-md-6">
+                                        <label>Invoice Amount</label>
+                                        <input type="text" /> </div> 
+                                    </div>            
+										   <div class="row"><div class="col-md-6">
+                                        <label>Notes</label>
+                                        <textarea cols="50"></textarea> 
+                              
+                                </div>  </div><br>
+								   <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Lot/Serial #</label>
+                                       <input type="text" /> </div>
+									    <div class="col-md-6">
+                                        <label>Quote Amount</label>
+                                        <input type="text" /> </div>
+										</div>
+										   <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Solution Revenue (Invoiced)</label>
+                                       <input type="text" /> </div>
+									    <div class="col-md-6">
+                                        <label> Inserts/Couplers (Invoiced)</label>
+                                        <input type="text" /> </div>
+										</div>
+                                   <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Freight Revenue (Invoiced)</label>
+                                       <input type="text" /> </div>
+									    <div class="col-md-6">
+                                        <label>Price Tier</label>
+                                        <input type="text" /> </div>
+										</div>  
+									
+                             <div class="row">
+                                    <div class="col-md-6">
+                                        <label>Notes for Internal Use</label>
+                                        <textarea cols="50"></textarea> 
+                               </div>
+										</div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                  <div class="row">
+                <div class="col-md-12">
+                    <asp:Button ID="btnAddUpdate" runat="server" Text="Print Internal Order Sheet" CssClass="adam-button" />
+                </div>
+            </div> <div class="row">
+                <div class="col-md-12">
+                    <asp:Button ID="btnAddUpdate" runat="server" Text="Print CofA" CssClass="adam-button" />
+                </div>
+            </div> <div class="row">
+                <div class="col-md-12">
+                    <asp:Button ID="btnAddUpdate" runat="server" Text="Print BOL" CssClass="adam-button" />
+                </div>
+            </div>
+                </article>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Form JS -->
+    <script src="js/formscript.js" type="text/javascript"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.datepicker').datepicker({
+            weekStart: 1
+        , });
+    </script>
+</body>
+
+</html>

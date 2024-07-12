@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Floating Form with Bootstrap 4</title>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&subset=latin-ext" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <!-- Bootstrap Datepicker -->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" type="text/css" />
+    <!-- Page style -->
+    <link rel="stylesheet" href="css/pagestyle.css" type="text/css" />
+    <!-- Form style -->
+    <link rel="stylesheet" href="css/formstyle.css" type="text/css" /> </head>
+
+<body>
+    <div class="container">
+        <!-- Header Title -->
+        <header class="header">
+            <h1>Floating Form with Bootstrap 4</h1> </header>
+        <div class="content">
+            <div class="row">
+                <aside class="col-md-3 sidebar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Registration Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login-icon.html">Login Form - Icon</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="bookingform.html">Travel Booking Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="medical.html">Doctor & Medical Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="veterinarian.html">Veterinarian Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact2.html">Contact Form Simple</a></li>
+                        <li class="nav-item"><a class="nav-link" href="search.html">Search Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forgot.html">Forgot Password Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reply.html">Reply Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="review.html">Review Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="subscribe.html">Subscribe Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form-grids.html">Form Grids</a></li>
+                        <li class="nav-item"><a class="nav-link" href="buttons-alerts.html">Buttons & Alerts</a></li>
+                    </ul>
+                </aside>
+                <article class="col-md-9">
+                    <!-- Start Registration Form -->
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <form>
+                                <!-- Form Title -->
+                                <div class="form-heading text-center">
+                                    <div class="title">Travel Booking Form</div>
+                                    <p class="title-description">Flights, Hotels, Cars and Cruises Form</p>
+                                </div>
+                                <!-- Nav tabs -->
+                                <div class="tabs-wrapper">
+                                    <ul class="nav classic-tabs" role="tablist">
+                                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#flights" role="tab"><i class="fa fa-plane fa-2x" aria-hidden="true"></i></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#hotels" role="tab"><i class="fa fa-building fa-2x" aria-hidden="true"></i></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#cars" role="tab"><i class="fa fa-car fa-2x" aria-hidden="true"></i></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#cruises" role="tab"><i class="fa fa-ship fa-2x" aria-hidden="true"></i></a> </li>
+                                    </ul>
+                                </div>
+                                <!-- Tab panels -->
+                                <div class="tab-content">
+                                    <!--Start Flight -->
+                                    <div class="tab-pane fade in show active" id="flights" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Search for Cheap Flights</h3> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <input type="radio" name="radio1">
+                                                <label>Round Trip</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="radio" name="radio1">
+                                                <label>One Way</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">From (City name or airport)</option>
+                                                    <option value="Alaska"> Alaska </option>
+                                                    <option value="Bhamas"> Bhamas </option>
+                                                    <option value="Bermuda"> Bermuda </option>
+                                                    <option value="Canada"> Canada </option>
+                                                    <option value="Hawaii"> Hawaii </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">To (City name or airport)</option>
+                                                    <option value="Alaska"> Alaska </option>
+                                                    <option value="Bhamas"> Bhamas </option>
+                                                    <option value="Bermuda"> Bermuda </option>
+                                                    <option value="Canada"> Canada </option>
+                                                    <option value="Hawaii"> Hawaii </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label><i class="fa fa-calendar"></i> Departing</label>
+                                                <input class="datepicker" type="datepicker" value=" " /> </div>
+                                            <div class="col-md-6">
+                                                <label><i class="fa fa-calendar"></i> Returning</label>
+                                                <input class="datepicker" type="datepicker" value=" " /> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Anytime</option>
+                                                    <option>12:00am</option>
+                                                    <option>1:00am</option>
+                                                    <option>2:00am</option>
+                                                    <option>3:00am</option>
+                                                    <option>4:00am</option>
+                                                    <option>5:00am</option>
+                                                    <option>6:00am</option>
+                                                    <option>7:00am</option>
+                                                    <option>8:00am</option>
+                                                    <option>9:00am</option>
+                                                    <option>10:00am</option>
+                                                    <option>11:00am</option>
+                                                    <option>12:00pm</option>
+                                                    <option>1:00pm</option>
+                                                    <option>2:00pm</option>
+                                                    <option>3:00pm</option>
+                                                    <option>4:00pm</option>
+                                                    <option>5:00pm</option>
+                                                    <option>6:00pm</option>
+                                                    <option>7:00pm</option>
+                                                    <option>8:00pm</option>
+                                                    <option>9:00pm</option>
+                                                    <option>10:00pm</option>
+                                                    <option>11:00pm</option>
+                                                    <option>Morning</option>
+                                                    <option>Afternoon</option>
+                                                    <option>Evening</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Anytime</option>
+                                                    <option>12:00am</option>
+                                                    <option>1:00am</option>
+                                                    <option>2:00am</option>
+                                                    <option>3:00am</option>
+                                                    <option>4:00am</option>
+                                                    <option>5:00am</option>
+                                                    <option>6:00am</option>
+                                                    <option>7:00am</option>
+                                                    <option>8:00am</option>
+                                                    <option>9:00am</option>
+                                                    <option>10:00am</option>
+                                                    <option>11:00am</option>
+                                                    <option>12:00pm</option>
+                                                    <option>1:00pm</option>
+                                                    <option>2:00pm</option>
+                                                    <option>3:00pm</option>
+                                                    <option>4:00pm</option>
+                                                    <option>5:00pm</option>
+                                                    <option>6:00pm</option>
+                                                    <option>7:00pm</option>
+                                                    <option>8:00pm</option>
+                                                    <option>9:00pm</option>
+                                                    <option>10:00pm</option>
+                                                    <option>11:00pm</option>
+                                                    <option>Morning</option>
+                                                    <option>Afternoon</option>
+                                                    <option>Evening</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Adult (18-64)</option>
+                                                    <option value="1"> 1 </option>
+                                                    <option value="2"> 2 </option>
+                                                    <option value="3"> 3 </option>
+                                                    <option value="4"> 4 </option>
+                                                    <option value="5"> 5 </option>
+                                                    <option value="6"> 6 </option>
+                                                    <option value="7"> 7 </option>
+                                                    <option value="8"> 8 </option>
+                                                    <option value="9"> 9 </option>
+                                                    <option value="10"> 10 </option>
+                                                    <option value="11"> 10+ </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Seniors (65+)</option>
+                                                    <option value="1"> 1 </option>
+                                                    <option value="2"> 2 </option>
+                                                    <option value="3"> 3 </option>
+                                                    <option value="4"> 4 </option>
+                                                    <option value="5"> 5 </option>
+                                                    <option value="6"> 6 </option>
+                                                    <option value="7"> 7 </option>
+                                                    <option value="8"> 8 </option>
+                                                    <option value="9"> 9 </option>
+                                                    <option value="10"> 10 </option>
+                                                    <option value="11"> 10+ </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Children (0-17)</option>
+                                                    <option value="1"> 1 </option>
+                                                    <option value="2"> 2 </option>
+                                                    <option value="3"> 3 </option>
+                                                    <option value="4"> 4 </option>
+                                                    <option value="5"> 5 </option>
+                                                    <option value="6"> 6 </option>
+                                                    <option value="7"> 7 </option>
+                                                    <option value="8"> 8 </option>
+                                                    <option value="9"> 9 </option>
+                                                    <option value="10"> 10 </option>
+                                                    <option value="11"> 10+ </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="adam-button adam-blue">Find Flight</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Start Hotels-->
+                                    <div class="tab-pane fade" id="hotels" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Find Discount &amp; Hotel Rates</h3> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="radio" name="radio1">
+                                                <label>Search by city, region, or airport</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="radio" name="radio1">
+                                                <label>Search by address</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>Where</label>
+                                                <input type="text" /> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label><i class="fa fa-calendar"></i> Check-In</label>
+                                                <input class="datepicker" type="datepicker" value=" " /> </div>
+                                            <div class="col-md-6">
+                                                <label><i class="fa fa-calendar"></i> Check-Out</label>
+                                                <input class="datepicker" type="datepicker" value=" " /> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Adult (18- +)</option>
+                                                    <option value="1"> 1 </option>
+                                                    <option value="2"> 2 </option>
+                                                    <option value="3"> 3 </option>
+                                                    <option value="4"> 4 </option>
+                                                    <option value="5"> 5 </option>
+                                                    <option value="6"> 6 </option>
+                                                    <option value="7"> 7 </option>
+                                                    <option value="8"> 8 </option>
+                                                    <option value="9"> 9 </option>
+                                                    <option value="10"> 10 </option>
+                                                    <option value="11"> 10+ </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Children (0-17)</option>
+                                                    <option value="1"> 1 </option>
+                                                    <option value="2"> 2 </option>
+                                                    <option value="3"> 3 </option>
+                                                    <option value="4"> 4 </option>
+                                                    <option value="5"> 5 </option>
+                                                    <option value="6"> 6 </option>
+                                                    <option value="7"> 7 </option>
+                                                    <option value="8"> 8 </option>
+                                                    <option value="9"> 9 </option>
+                                                    <option value="10"> 10 </option>
+                                                    <option value="11"> 10+ </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Rooms</option>
+                                                    <option value="1"> 1 </option>
+                                                    <option value="2"> 2 </option>
+                                                    <option value="3"> 3 </option>
+                                                    <option value="4"> 4 </option>
+                                                    <option value="5"> 5 </option>
+                                                    <option value="5+"> 5+ </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="adam-button adam-green">Find Hotels</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Start Cars-->
+                                    <div class="tab-pane fade" id="cars" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Get Great Deals on Car Rentals</h3> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Country</option>
+                                                    <option value="Alaska"> Alaska </option>
+                                                    <option value="Bhamas"> Bhamas </option>
+                                                    <option value="Bermuda"> Bermuda </option>
+                                                    <option value="Canada"> Canada </option>
+                                                    <option value="Hawaii"> Hawaii </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">City</option>
+                                                    <option value="Alaska"> Alaska </option>
+                                                    <option value="Bhamas"> Bhamas </option>
+                                                    <option value="Bermuda"> Bermuda </option>
+                                                    <option value="Canada"> Canada </option>
+                                                    <option value="Hawaii"> Hawaii </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Location</option>
+                                                    <option value="Alaska"> Alaska </option>
+                                                    <option value="Bhamas"> Bhamas </option>
+                                                    <option value="Bermuda"> Bermuda </option>
+                                                    <option value="Canada"> Canada </option>
+                                                    <option value="Hawaii"> Hawaii </option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label><i class="fa fa-calendar"></i> Pick up Date</label>
+                                                <input class="datepicker" type="datepicker" value=" " /> </div>
+                                            <div class="col-md-6">
+                                                <label><i class="fa fa-calendar"></i> Drop off Date</label>
+                                                <input class="datepicker" type="datepicker" value=" " /> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="adam-button adam-orange">Find Car</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Start Cruise -->
+                                    <div class="tab-pane fade" id="cruises" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Choose your destination, length, and cruise line</h3> </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Cruise Destination</option>
+                                                    <option>Africa</option>
+                                                    <option>Alaska - All</option>
+                                                    <option>&nbsp;Alaska</option>
+                                                    <option>&nbsp;Alaska Cruise Tours</option>
+                                                    <option>Antarctica</option>
+                                                    <option>Asia - all</option>
+                                                    <option>&nbsp;Asia</option>
+                                                    <option>&nbsp;Asia Cruise Tours</option>
+                                                    <option>&nbsp;India</option>
+                                                    <option>Australia/New Zealand - all</option>
+                                                    <option>&nbsp;Australia/New Zealand</option>
+                                                    <option>&nbsp;Australia/New Zealand Cruise Tours</option>
+                                                    <option>Bahamas</option>
+                                                    <option>Bermuda</option>
+                                                    <option>Canada/New England - all</option>
+                                                    <option>&nbsp;Canada/New England</option>
+                                                    <option>&nbsp;Canada/New England Cruise Tours</option>
+                                                    <option>Caribbean - All</option>
+                                                    <option>&nbsp;Eastern Caribbean</option>
+                                                    <option>&nbsp;Southern Caribbean</option>
+                                                    <option>&nbsp;Western Caribbean</option>
+                                                    <option>Europe - All</option>
+                                                    <option>&nbsp;Europe Cruise Tours</option>
+                                                    <option>&nbsp;Mediterranean</option>
+                                                    <option>&nbsp;Northern Europe</option>
+                                                    <option>&nbsp;Transatlantic</option>
+                                                    <option>&nbsp;Western Europe</option>
+                                                    <option>Hawaii</option>
+                                                    <option>Mexico - All</option>
+                                                    <option>&nbsp;Baja California</option>
+                                                    <option>&nbsp;Mexican Riviera</option>
+                                                    <option>Middle East - all</option>
+                                                    <option>&nbsp;Middle East</option>
+                                                    <option>Nowhere</option>
+                                                    <option>Panama Canal</option>
+                                                    <option>River Cruise</option>
+                                                    <option>&nbsp;River Cruise - China</option>
+                                                    <option>&nbsp;River Cruise - Europe</option>
+                                                    <option>&nbsp;River Cruise - Indochina</option>
+                                                    <option>»&nbsp;River Cruise - Russia</option>
+                                                    <option>South America - parent</option>
+                                                    <option>&nbsp;Galapagos Islands</option>
+                                                    <option>&nbsp;South America</option>
+                                                    <option>&nbsp;South America Cruise Tours</option>
+                                                    <option>Tahiti</option>
+                                                    <option>U.S. Pacific Coast</option>
+                                                    <option>World</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Cruise Length</option>
+                                                    <option>1-2 Nights</option>
+                                                    <option>3-6 Nights</option>
+                                                    <option>7-9 Nights</option>
+                                                    <option>10-14 Nights</option>
+                                                    <option>Over 14 Nights</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Departure Month</option>
+                                                    <option>Jan-2015</option>
+                                                    <option>Feb-2015</option>
+                                                    <option>Mar-2015</option>
+                                                    <option>Apr-2015</option>
+                                                    <option>May-2015</option>
+                                                    <option>Jun-2015</option>
+                                                    <option>Jul-2015</option>
+                                                    <option>Aug-2015</option>
+                                                    <option>Sep-2015</option>
+                                                    <option>Oct-2015</option>
+                                                    <option>Nov-2015</option>
+                                                    <option>Dec-2015</option>
+                                                    <option>Jan-2016</option>
+                                                    <option>Feb-2016</option>
+                                                    <option>Mar-2016</option>
+                                                    <option>Apr-2016</option>
+                                                    <option>May-2016</option>
+                                                    <option>Jun-2016</option>
+                                                    <option>Jul-2016</option>
+                                                    <option>Aug-2015</option>
+                                                    <option>Sep-2015</option>
+                                                    <option>Oct-2015</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Day</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Cruise Departure Port</option>
+                                                    <option>Amsterdam, Netherlands</option>
+                                                    <option>Ancona, Italy</option>
+                                                    <option>Auckland, New Zealand</option>
+                                                    <option>Avignon, France</option>
+                                                    <option>Baltimore, Maryland</option>
+                                                    <option>Bamberg, Germany</option>
+                                                    <option>Baoshan, China</option>
+                                                    <option>Barcelona, Catalonia, Spain</option>
+                                                    <option>Bari, Italy</option>
+                                                    <option>Basel, Switzerland</option>
+                                                    <option>Benoa, Bali, Indonesia</option>
+                                                    <option>Bordeaux, France</option>
+                                                    <option>Boston, Massachusetts</option>
+                                                    <option>Bridgetown, Barbados</option>
+                                                    <option>Brisbane, Australia</option>
+                                                    <option>Budapest, Hungary</option>
+                                                    <option>Buenos Aires, Argentina</option>
+                                                    <option>Cagliari, Sardinia, Italy</option>
+                                                    <option>Callao, Peru</option>
+                                                    <option>Cape Liberty, Bayonne, New Jersey</option>
+                                                    <option>Cape Town, South Africa</option>
+                                                    <option>Capri, Italy</option>
+                                                    <option>Catalina Island, Dominican Republic</option>
+                                                    <option>Catania, Sicily, Italy</option>
+                                                    <option>Chalon-sur-Saone, France</option>
+                                                    <option>Charleston, South Carolina</option>
+                                                    <option>Charlotte Amalie, St. Thomas, United States Virgin Islands</option>
+                                                    <option>Chennai, India</option>
+                                                    <option>Chongqing, China</option>
+                                                    <option>Civitavecchia, Italy</option>
+                                                    <option>Colon, Panama</option>
+                                                    <option>Copenhagen, Denmark</option>
+                                                    <option>Dover, England, United Kingdom</option>
+                                                    <option>Dubai, United Arab Emirates</option>
+                                                    <option>Durban, South Africa</option>
+                                                    <option>Ensenada, Baja California, Mexico</option>
+                                                    <option>Fremantle, Australia</option>
+                                                    <option>Ft. Lauderdale, Florida</option>
+                                                    <option>Galveston, Texas</option>
+                                                    <option>Genoa, Italy</option>
+                                                    <option>Giurgiu, Romania</option>
+                                                    <option>Hamburg, Germany</option>
+                                                    <option>Harwich, England, United Kingdom</option>
+                                                    <option>Heraklion, Crete, Greece</option>
+                                                    <option>Hong Kong, China</option>
+                                                    <option>Honolulu, Oahu, Hawaii</option>
+                                                    <option>Houston, Texas, United States</option>
+                                                    <option>IJmuiden, Netherlands</option>
+                                                    <option>Isla Baltra, Galapagos Islands, Ecuador</option>
+                                                    <option>Istanbul, Turkey</option>
+                                                    <option>Jacksonville, Florida</option>
+                                                    <option>Kampong Cham, Cambodia</option>
+                                                    <option>Ketchikan, Alaska</option>
+                                                    <option>Kiel, Germany</option>
+                                                    <option>Kiev, Ukraine</option>
+                                                    <option>Kobe, Japan</option>
+                                                    <option>La Romana, Dominican Republic</option>
+                                                    <option>Laem Chabang, Thailand</option>
+                                                    <option>Lisbon, Portugal</option>
+                                                    <option>Livorno, Italy</option>
+                                                    <option>London, England, United Kingdom</option>
+                                                    <option>Long Beach, California</option>
+                                                    <option>Los Angeles, California</option>
+                                                    <option>Magdeburg, Germany</option>
+                                                    <option>Malaga, Spain</option>
+                                                    <option>Manaus, Brazil</option>
+                                                    <option>Mandalay, Myanmar</option>
+                                                    <option>Marseille, Provence, France</option>
+                                                    <option>Melbourne, Australia</option>
+                                                    <option>Messina, Sicily, Italy</option>
+                                                    <option>Miami, Florida</option>
+                                                    <option>Monte-Carlo, Monaco</option>
+                                                    <option>Montreal, Quebec, Canada</option>
+                                                    <option>Moscow, Russia</option>
+                                                    <option>Mumbai, India</option>
+                                                    <option>My Tho, Vietnam</option>
+                                                    <option>Nanjing, China</option>
+                                                    <option>Naples, Italy</option>
+                                                    <option>New Orleans, Louisiana</option>
+                                                    <option>New York, New York</option>
+                                                    <option>Nice, France</option>
+                                                    <option>Norfolk, Virginia</option>
+                                                    <option>Nurnberg, Germany</option>
+                                                    <option>Odessa, Ukraine</option>
+                                                    <option>Oranjestad, Aruba, Netherlands Antilles</option>
+                                                    <option>Oslo, Norway</option>
+                                                    <option>Otaru, Japan</option>
+                                                    <option>Palermo, Sicily, Italy</option>
+                                                    <option>Palma de Mallorca, Mallorca, Spain</option>
+                                                    <option>Papeete, Tahiti, French Polynesia</option>
+                                                    <option>Paris, France</option>
+                                                    <option>Passau, Germany</option>
+                                                    <option>Philipsburg, Sint Maarten, Netherlands Antilles</option>
+                                                    <option>Piraeus, Greece</option>
+                                                    <option>Pointe-a-Pitre, Guadeloupe, France</option>
+                                                    <option>Port Canaveral, Florida</option>
+                                                    <option>Prome, Myanmar</option>
+                                                    <option>Puerto Caldera, Costa Rica</option>
+                                                    <option>Quebec City, Quebec, Canada</option>
+                                                    <option>Rhodes, Rhodes Island, Greece</option>
+                                                    <option>Rio de Janeiro, Brazil</option>
+                                                    <option>Rotterdam, Netherlands</option>
+                                                    <option>San Diego, California</option>
+                                                    <option>San Francisco, California</option>
+                                                    <option>San Juan, Puerto Rico</option>
+                                                    <option>Santa Cruz de Tenerife, Tenerife, Canary Islands, Spain</option>
+                                                    <option>Santos, Brazil</option>
+                                                    <option>Savona, Italy</option>
+                                                    <option>Seattle, Washington</option>
+                                                    <option>Seville, Spain</option>
+                                                    <option>Seward, Alaska</option>
+                                                    <option>Shanghai, China</option>
+                                                    <option>Sharm al Sheikh, Sinai, Egypt</option>
+                                                    <option> Singapore, Singapore</option>
+                                                    <option>Southampton, England, United Kingdom</option>
+                                                    <option>St. Petersburg, Russia</option>
+                                                    <option>Stockholm, Sweden</option>
+                                                    <option>Sydney, Australia</option>
+                                                    <option>Tampa, Florida</option>
+                                                    <option>Tianjin, China</option>
+                                                    <option>Toulon, France</option>
+                                                    <option>Trier, Germany</option>
+                                                    <option>Trieste, Italy</option>
+                                                    <option>Valencia, Spain</option>
+                                                    <option>Valparaiso, Chile</option>
+                                                    <option>Vancouver, British Columbia, Canada</option>
+                                                    <option>Venice, Italy</option>
+                                                    <option>Vila Nova de Gaia, Portugal</option>
+                                                    <option>Warnemunde, Germany</option>
+                                                    <option>Whittier, Alaska</option>
+                                                    <option>Wuhan, China</option>
+                                                    <option>Yokohama, Japan</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="form-control">
+                                                    <option disabled="" selected="">Cruise Line</option>
+                                                    <option>Azamara Club Cruises</option>
+                                                    <option>Carnival Cruise Lines</option>
+                                                    <option>Celebrity Cruises</option>
+                                                    <option>Costa Cruises</option>
+                                                    <option>Disney Cruise Line</option>
+                                                    <option>Holland America Line</option>
+                                                    <option>MSC Cruises</option>
+                                                    <option>Norwegian Cruise Line</option>
+                                                    <option>Oceania Cruises</option>
+                                                    <option>Princess Cruises</option>
+                                                    <option>Regent Seven Seas Cruises</option>
+                                                    <option>Royal Caribbean Int'l</option>
+                                                    <option>Seabourn</option>
+                                                    <option>Viking River Cruises</option>
+                                                </select>
+                                                <div class="lineheight"></div>
+                                                <!-- for spacing height -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button class="adam-button adam-red">Find Cruise</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Form JS -->
+    <script src="js/formscript.js" type="text/javascript"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.datepicker').datepicker({
+            weekStart: 1
+        , });
+    </script>
+</body>
+
+</html>

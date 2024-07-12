@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Floating Form with Bootstrap 4</title>
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&subset=latin-ext" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <!-- Bootstrap Datepicker -->
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" type="text/css" />
+    <!-- Page style -->
+    <link rel="stylesheet" href="css/pagestyle.css" type="text/css" />
+    <!-- Form style -->
+    <link rel="stylesheet" href="css/formstyle.css" type="text/css" /> </head>
+
+<body>
+    <div class="container">
+        <!-- Header Title -->
+        <header class="header">
+            <h1>Floating Form with Bootstrap 4</h1> </header>
+        <div class="content">
+            <div class="row">
+                <aside class="col-md-3 sidebar">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Registration Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login-icon.html">Login Form - Icon</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bookingform.html">Travel Booking Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="medical.html">Doctor & Medical Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="veterinarian.html">Veterinarian Form</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="checkout.html">Checkout Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact2.html">Contact Form Simple</a></li>
+                        <li class="nav-item"><a class="nav-link" href="search.html">Search Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="forgot.html">Forgot Password Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reply.html">Reply Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="review.html">Review Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="subscribe.html">Subscribe Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form-grids.html">Form Grids</a></li>
+                        <li class="nav-item"><a class="nav-link" href="buttons-alerts.html">Buttons & Alerts</a></li>
+                    </ul>
+                </aside>
+                <article class="col-md-9">
+                    <!-- Start Billing & Payment Form -->
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <form>
+                                <!-- Form Title -->
+                                <div class="form-heading text-center">
+                                    <div class="title">Billing &amp; Payment Information</div>
+                                    <p class="title-description">Please provide the billing &amp; payment info below</p>
+                                </div>
+                                <!-- First & Last Name -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>First Name</label>
+                                        <input type="text" /> </div>
+                                    <div class="col-md-6">
+                                        <label>Last Name</label>
+                                        <input type="text" /> </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>Email address</label>
+                                        <input type="email" /> </div>
+                                </div>
+                                <!-- State & Zip/Postal Code -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>State</label>
+                                        <input type="text" /> </div>
+                                    <div class="col-md-6">
+                                        <label>Zip/Postal Code</label>
+                                        <input type="text" /> </div>
+                                </div>
+                                <!-- City & Country -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label>City</label>
+                                        <input type="text" /> </div>
+                                    <div class="col-md-6">
+                                        <select class="form-control">
+                                            <option disabled="" selected="">Country</option>
+                                            <option value="France"> France </option>
+                                            <option value="Canada"> Canada </option>
+                                            <option value="USA"> USA </option>
+                                            <option value="United Kingdom"> United Kingdom </option>
+                                            <option value="...">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Card Type & Number -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <select class="form-control">
+                                            <option disabled="" selected="">Card Type</option>
+                                            <option value="Visa"> Visa </option>
+                                            <option value="MasterCard"> MasterCard </option>
+                                            <option value="America Express"> America Express </option>
+                                            <option value="Other"> Other </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Card Number</label>
+                                        <input type="text" /> </div>
+                                </div>
+                                <!-- Month & Year & CCV -->
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <label class="control-label"><i class="fa fa-calendar"></i> Month/Day/Year</label>
+                                        <input type="text" class="datepicker" value=" "> </div>
+                                    <div class="col-md-4">
+                                        <label>CCV</label>
+                                        <input type="text" /> </div>
+                                </div>
+                                <!-- Choose File -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- Choose File -->
+                                        <label for="inputFile" class="file-input"> <span class="btn file-button">
+                                    <input type="file" id="inputFile" onchange="this.parentNode.parentNode.nextElementSibling.value = this.value">Choose File
+                                    </span> </label>
+                                        <input class="file-name" type="text" readonly="readonly" placeholder="No file selected"> </div>
+                                </div>
+                                <!-- Checkbox -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="checkbox" />
+                                        <label>Do you agree to the <a href="#">terms and conditions?</a></label>
+                                    </div>
+                                </div>
+                                <!-- Place Order Button -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="adam-button">PLACE ORDER</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Start Billing & Payment Form -->
+                </article>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Form JS -->
+    <script src="js/formscript.js" type="text/javascript"></script>
+    <!-- Bootstrap Datepicker JS -->
+    <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.datepicker').datepicker({
+            weekStart: 1
+        , });
+    </script>
+</body>
+
+</html>
