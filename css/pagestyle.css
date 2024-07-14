@@ -1,11 +1,17 @@
 /* ------------------------------------------
 	Page Style 
 ------------------------------------------ */
+
+/* new Font link  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: #898989;
-    background: #fff url('../images/bg.jpg') center top no-repeat;
+    /* background: #fff url('../images/bg.jpg') center top no-repeat; */
+    background-color: #ececef;
 }
 
 a {
@@ -64,53 +70,17 @@ b, strong {
 
 
 .header h1 {
-    margin: 50px 0;
+    margin: 40px 0;
     font-size: 32px;
     line-height: 32px;
     color: #fff;
     text-shadow: -1px 0px -1px #000;
+    text-align: center;
 }
 
-.content {
-    margin-bottom: 0px;
-    padding: 50px 15px;
-    background: #fff;
-    border-radius: 6px;
-}
-
-.sidebar .nav {
-    margin-bottom: 50px;
-    font-size: 14px;
-}
-
-.nav li {
-    border-bottom: 1px solid #ececec;
-}
-
-.sidebar .nav-stacked > li + li {
-    margin: 0;
-}
-
-.sidebar .nav li a {
-    color: #898989;
-    font-weight: 300;
-}
-
-.sidebar .nav > li > a:hover,
-.sidebar .nav > li > a:focus {
-    color: #fff;
-    background: #808080;
-    border: 1px solid #808080;
-    box-shadow: 0 12px 20px -10px rgba(244, 67, 54, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(244, 67, 54, 0.2);
-    border-radius: 6px;
-}
-
-.sidebar .nav > li.active > a {
-    color: #808080;
-    background: #F2F7FA;
-    border: 1px solid #F2F7FA;
-    box-shadow: 0 12px 20px -10px rgba(244, 67, 54, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(244, 67, 54, 0.2);
-    border-radius: 6px;
+.header h1 img {
+    max-width: 100%;
+    object-fit: contain;
 }
 
 
@@ -119,10 +89,152 @@ b, strong {
 new CSS start here 13/07/2024
 ================================================= */
 
-.manna {
-    color: royalblue;
+.clearfix {
+    text-align: center;
+    font-size: 14px;
 }
-.munna {
-    color: greenyellow;
-    color: red;
+.clearfix a {
+    color: #1b6aac;
+    font-weight: 500;
+}
+
+.content {
+    padding: 0px 15px 0px 0px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    /* padding: 50px 35px;
+    background: #fff;
+    border-radius: 15px; */
+}
+
+.right-content-wrapper {
+    padding-top: 10px;
+    /* border: 1px solid #2fb74e; */
+    padding-right: 15px;
+}
+
+.right-content-wrapper::before {
+}
+
+.right-content-wrapper .form-heading {
+    position: relative;
+    background-color: #2fb74e;
+    text-align: start;
+}
+
+.right-content-wrapper .form-heading::before,
+.right-content-wrapper .form-heading::after{
+    /* position: absolute;
+    content: '';
+    bottom: 0;
+    top: 51%;
+    left: 0%;
+    width: 200px;
+    height: 2px;
+    background-color: #2fb74e; */
+}
+
+/* .right-content-wrapper .form-heading::after {
+    right: 0;
+    left: auto;
+} */
+
+.right-content-wrapper .form-heading .title{
+    margin-bottom: 0;
+    color: #FFFFFF;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+}
+.copyright-text {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.sidebar {
+    /* background-color: #111b42; */
+    height: 100%;
+    padding: 35px 0px 30px;
+    /* border: 1px solid #d2d2d2; */
+    box-shadow: 3px 10px 10px rgba(10, 10, 10, .1);
+    background-color: #fff;
+    padding-right: 20px;
+    
+}
+
+
+.sidebar svg {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar .nav {
+    margin-bottom: 0px;
+    padding-left: 35px;
+}
+
+.sidebar .nav-stacked > li + li {
+    margin: 0;
+}
+
+.sidebar .nav li a {
+    color: #898989;
+    font-weight: 400;
+    transition: all ease .2s;
+    font-size: 14px;
+    /* padding-inline: 0px; */
+    /* border-bottom: 1px solid #d2d2d2; */
+    border-radius: 4px;
+}
+
+.sidebar .nav > li > a:hover {
+    color: #333;
+    /* border-color: #2fb74e; */
+    background-color: #2fb74f5b;
+}
+
+.sidebar .nav > li.active > a {
+    color: #333;
+    /* border-color: #2fb74e; */
+    background-color: #2fb74f5b;
+    box-shadow: 0 3px 8px hsla(134, 59%, 45%, 0.2);
+}
+
+.sidebar .nav li a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.sidebar .nav li a:hover .st0 {
+    stroke:#333;
+    transition: all ease .3s;
+}
+
+@media (max-width: 991px) {
+    .copyright-text {
+        padding-top: 50px;
+        padding-bottom: 35px;
+    }
+    .right-content-wrapper {
+        padding-right: 0px;
+    }
+    .sidebar {
+        box-shadow: none;
+        border-bottom: 1px solid #ececef;
+    }
+    .right-content-wrapper .form-heading .title {
+        font-size: 21px;
+    }
+    .content {
+        padding: 0;
+    }
+    .right-content-wrapper .adam-button {
+        margin-top: 10px;
+    }
+    .sidebar .nav {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
 }
