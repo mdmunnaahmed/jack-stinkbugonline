@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&amp;subset=latin-ext" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <!-- Page style -->
+    <link rel="stylesheet" href="css/pagestyle.css" type="text/css" />
+    <!-- Form style -->
+    <link rel="stylesheet" href="css/formstyle.css" type="text/css" />
+    <!-- jQuery -->
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <title>Customers</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Title -->
+      <header class="header">
+        <h1>
+          <img src="images/CDG-logo-header.png" width="536" height="67" />
+        </h1>
+      </header>
+      <div class="content">
+        <div class="row">
+          <aside class="col-md-3">
+			<div class="sidebar">
+				<!-- new div added munns-->
+				<ul class="nav flex-column">
+				  <li class="nav-item active">
+					<a class="nav-link" href="Customers.aspx">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+						<g fill="none" stroke="currentColor" stroke-width="1.5">
+						  <circle cx="9" cy="6" r="4" />
+						  <path d="M12.5 4.341a3 3 0 1 1 0 3.318" opacity=".5" />
+						  <ellipse cx="9" cy="17" rx="7" ry="4" />
+						  <path stroke-linecap="round" d="M18 14c1.754.385 3 1.359 3 2.5c0 1.03-1.014 1.923-2.5 2.37" opacity=".5" />
+						</g>
+					  </svg>
+					  Customers
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Carriers.aspx">
+					  <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="64px" height="64px" fill="#000000">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+						  <style type="text/css">
+							.st0 {
+							  fill: none;
+							  stroke: #898989;
+							  stroke-width: 2;
+							  stroke-linecap: round;
+							  stroke-linejoin: round;
+							  stroke-miterlimit: 10;
+							}
+							.st1 {
+							  fill: none;
+							  stroke: #898989;
+							  stroke-width: 2;
+							  stroke-linecap: round;
+							  stroke-linejoin: round;
+							  stroke-miterlimit: 10;
+							  stroke-dasharray: 3;
+							}
+							.st2 {
+							  fill: none;
+							  stroke: #898989;
+							  stroke-width: 2;
+							  stroke-linejoin: round;
+							  stroke-miterlimit: 10;
+							}
+							.st3 {
+							  fill: none;
+							}
+						  </style>
+						  <rect x="2" y="7" class="st0" width="12" height="4"></rect>
+						  <rect x="3" y="11" class="st0" width="10" height="7"></rect>
+						  <path class="st0" d="M6,7h2V5c0-1.1-0.9-2-2-2h0C4.9,3,4,3.9,4,5v0C4,6.1,4.9,7,6,7z"></path>
+						  <path class="st0" d="M10,7H8V5c0-1.1,0.9-2,2-2h0c1.1,0,2,0.9,2,2v0C12,6.1,11.1,7,10,7z"></path>
+						  <circle class="st0" cx="24" cy="24" r="2"></circle>
+						  <circle class="st0" cx="8" cy="24" r="2"></circle>
+						  <polyline class="st0" points="19,24 19,13 25,13 29,18 29,24 26,24 "></polyline>
+						  <polyline class="st0" points="3,18 3,24 6,24 "></polyline>
+						  <polyline class="st0" points="10,24 19,24 19,9 14,9 "></polyline>
+						  <rect x="-432" y="-432" class="st3" width="536" height="680"></rect>
+						</g>
+					  </svg>
+					  Carriers
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Warehouses.aspx">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+						<g fill="currentColor">
+						  <path d="M184 128v64H72v-64Z" opacity=".2" />
+						  <path
+							d="M240 184h-8V57.9l9.67-2.08a8 8 0 1 0-3.35-15.64l-224 48A8 8 0 0 0 16 104a8 8 0 0 0 1.69-.18l6.31-1.35V184h-8a8 8 0 0 0 0 16h224a8 8 0 0 0 0-16M40 99l176-37.67V184h-24v-56a8 8 0 0 0-8-8H72a8 8 0 0 0-8 8v56H40Zm136 53H80v-16h96Zm-96 16h96v16H80Z"
+						  />
+						</g>
+					  </svg>
+					  Warehouses
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Consignees.aspx">
+					  <svg xmlns="http://www.w3.org/2000/svg" style="width: 18px !important; width: 18px !important" viewBox="0 0 16 16">
+						<g fill="currentColor" fill-rule="evenodd">
+						  <path
+							d="M15.854.146a.5.5 0 0 1 .11.54l-2.8 7a.5.5 0 1 1-.928-.372l1.895-4.738l-7.494 7.494l1.376 2.162a.5.5 0 1 1-.844.537l-1.531-2.407L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM5.93 9.363l7.494-7.494L1.591 6.602z"
+						  />
+						  <path d="M12.5 16a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7m.354-5.354a.5.5 0 0 0-.722.016l-1.149 1.25a.5.5 0 1 0 .737.676l.28-.305V14a.5.5 0 0 0 1 0v-1.793l.396.397a.5.5 0 0 0 .708-.708z" />
+						</g>
+					  </svg>
+					  Consignees
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Parts.aspx">
+					  <svg style="width: 18px !important; width: 18px !important" viewBox="0 0 1024 1024" fill="currentColor" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+						  <path
+							d="M541.787003 587.448184h0.127568v156.907983l12.246477-9.184857c41.204292-31.254029 94.910195-38.397807 141.855023-21.558902h60.594546v37.122133l15.818366 11.991342 36.356728-27.554573c9.822695-7.398913 20.283227-13.394584 31.126462-18.11458v-127.057197l167.878786 1.403242V401.709952l-85.980473-0.765405V127.312332L874.355389 0H510.405407L465.246524 127.567467v345.069997h76.540479v114.81072z m214.823614 93.12425h-131.39449v-30.871327h131.39449v30.871327z m0-63.783733h-131.39449V588.086021l131.39449 1.148107v27.554573z m174.639862-139.176106v36.611863L618.327483 511.545541v-36.611863l312.922996 2.678917zM564.494012 76.54048h256.793311l19.517822 52.302661H545.869162L564.494012 76.54048z m-22.834576 319.684071V203.980379h303.61057v192.244172h-92.869115v-104.73289H638.738278v104.73289h-97.078842zM772.301416 1023.984054a112.004236 112.004236 0 0 1-67.865893-22.707009l-37.887537-28.70268c-12.756747-9.695127-30.488625-9.56756-43.117804 0l-37.887538 28.70268c-39.928617 30.23349-95.6756 30.361057-135.604216 0l-37.887538-28.70268c-12.756747-9.695127-30.488625-9.56756-43.117804 0l-37.887537 28.70268c-39.928617 30.23349-95.6756 30.361057-135.604217 0l-37.887538-28.70268c-12.756747-9.56756-30.488625-9.56756-43.117804 0l-49.496177 37.504835A38.244726 38.244726 0 1 1 18.760391 949.101951l49.496177-37.504835c39.928617-30.23349 95.803167-30.23349 135.604217 0l37.887537 28.70268c12.756747 9.56756 30.488625 9.56756 43.117804 0l37.887537-28.70268c39.928617-30.23349 95.6756-30.361057 135.604217 0l37.887538 28.70268c12.756747 9.56756 30.488625 9.56756 43.117804 0l37.887537-28.70268c39.928617-30.23349 95.6756-30.361057 135.604217 0l37.887538 28.70268c12.756747 9.56756 30.488625 9.56756 43.117803 0l37.887538-28.70268c39.928617-30.23349 95.6756-30.361057 135.604217 0l37.887537 28.70268a38.244726 38.244726 0 1 1-46.179422 60.977249l-37.887538-28.70268c-12.756747-9.56756-30.488625-9.56756-43.117804 0l-37.887537 28.70268a111.723587 111.723587 0 0 1-67.865892 22.707009z"
+							fill=""
+						  ></path>
+						  <path
+							d="M1005.367177 794.362614l-37.887538-28.70268c-39.928617-30.361057-95.6756-30.23349-135.604217 0l-37.887537 28.70268c-12.756747 9.56756-30.488625 9.56756-43.117804 0l-37.887537-28.70268c-39.928617-30.361057-95.6756-30.23349-135.604217 0l-37.887538 28.70268c-12.756747 9.56756-30.488625 9.56756-43.117804 0l-37.887537-28.70268c-39.928617-30.361057-95.6756-30.23349-135.604217 0l-37.887538 28.70268c-12.756747 9.56756-30.488625 9.56756-43.117803 0l-37.887538-28.70268a112.131803 112.131803 0 0 0-33.039974-17.221608c-21.814037 30.871327-57.660495 51.154554-98.226949 51.154554-14.032421 0-27.427005-2.551349-39.928617-7.01621l-13.904854 10.588099a38.244726 38.244726 0 1 0 46.179423 60.977249l49.496177-37.504835c12.756747-9.56756 30.488625-9.56756 43.117804 0l37.887537 28.70268c39.928617 30.361057 95.6756 30.23349 135.604217 0l37.887538-28.70268c12.629179-9.56756 30.488625-9.695127 43.117803 0L449.938428 855.339863c39.928617 30.361057 95.6756 30.23349 135.604216 0l37.887538-28.70268c12.756747-9.56756 30.488625-9.695127 43.117804 0l37.887537 28.70268a112.004236 112.004236 0 0 0 67.865893 22.707009c23.982684 0 47.8378-7.526481 67.865892-22.707009l37.887537-28.70268c12.756747-9.56756 30.488625-9.56756 43.117804 0l37.887538 28.70268c16.838906 12.756747 40.821589 9.439993 53.578336-7.398913 12.884314-16.838906 9.56756-40.821589-7.271346-53.578336zM331.555819 298.380304v52.302662h-76.54048v-63.783734h61.615086v-95.803167H98.745192v95.803167h60.466979v66.845353C77.824128 368.925113 16.591744 440.873164 16.591744 525.19526v19.900525h110.090723v-19.900525c0-35.463756 28.830247-64.421571 64.421571-64.421571h140.451781v62.890761h95.803167V298.380304h-95.803167zM72.466294 561.42442l-16.966473 27.682141C43.636047 608.496815 16.081474 656.079481 16.081474 679.296759c0 31.126462 25.258358 56.38482 56.38482 56.384821s56.38482-25.258358 56.38482-56.384821c0-23.217279-27.554573-70.799944-39.418347-90.190198l-16.966473-27.682141z"
+							fill=""
+						  ></path>
+						</g>
+					  </svg>
+					  Parts
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Orders.aspx">
+					  <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path fill="currentColor" d="M222 128a6 6 0 0 1-6 6h-88a6 6 0 0 1 0-12h88a6 6 0 0 1 6 6m-94-58h88a6 6 0 0 0 0-12h-88a6 6 0 0 0 0 12m88 116h-88a6 6 0 0 0 0 12h88a6 6 0 0 0 0-12M83.76 43.76L56 71.51L44.24 59.76a6 6 0 0 0-8.48 8.48l16 16a6 6 0 0 0 8.48 0l32-32a6 6 0 0 0-8.48-8.48m0 64L56 135.51l-11.76-11.75a6 6 0 1 0-8.48 8.48l16 16a6 6 0 0 0 8.48 0l32-32a6 6 0 0 0-8.48-8.48m0 64L56 199.51l-11.76-11.75a6 6 0 0 0-8.48 8.48l16 16a6 6 0 0 0 8.48 0l32-32a6 6 0 0 0-8.48-8.48"/></svg> -->
+					  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+						<path
+						  fill="currentColor"
+						  d="M13 16H7a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2m-4-6h2a1 1 0 0 0 0-2H9a1 1 0 0 0 0 2m12 2h-3V3a1 1 0 0 0-.5-.87a1 1 0 0 0-1 0l-3 1.72l-3-1.72a1 1 0 0 0-1 0l-3 1.72l-3-1.72a1 1 0 0 0-1 0A1 1 0 0 0 2 3v16a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1M5 20a1 1 0 0 1-1-1V4.73l2 1.14a1.08 1.08 0 0 0 1 0l3-1.72l3 1.72a1.08 1.08 0 0 0 1 0l2-1.14V19a3 3 0 0 0 .18 1Zm15-1a1 1 0 0 1-2 0v-5h2Zm-7-7H7a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2"
+						/>
+					  </svg>
+					  Orders
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Facilities.aspx">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
+						  <path d="M11.53 22h-1.06c-3.992 0-5.989 0-7.23-1.172C2 19.657 2 17.771 2 14v-4c0-3.771 0-5.657 1.24-6.828C4.481 2 6.478 2 10.47 2h1.06c3.993 0 5.989 0 7.23 1.172C20 4.343 20 6.229 20 10v.5M7 7h8m-8 5h5" />
+						  <path
+							d="M18 20.714V22m0-1.286a3.36 3.36 0 0 1-2.774-1.43M18 20.713a3.36 3.36 0 0 0 2.774-1.43M18 14.285c1.157 0 2.176.568 2.774 1.43M18 14.287a3.36 3.36 0 0 0-2.774 1.43M18 14.287V13m4 1.929l-1.226.788M14 20.07l1.226-.788M14 14.93l1.226.788M22 20.07l-1.226-.788m0-3.566a3.12 3.12 0 0 1 0 3.566m-5.548-3.566a3.12 3.12 0 0 0 0 3.566"
+						  />
+						</g>
+					  </svg>
+					  Facilities
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="BOL.aspx">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+						<g fill="none" stroke="currentColor" stroke-width="1.5">
+						  <path
+							d="M16.755 2h-9.51c-1.159 0-1.738 0-2.206.163a3.046 3.046 0 0 0-1.881 1.936C3 4.581 3 5.177 3 6.37v14.004c0 .858.985 1.314 1.608.744a.946.946 0 0 1 1.284 0l.483.442a1.657 1.657 0 0 0 2.25 0a1.657 1.657 0 0 1 2.25 0a1.657 1.657 0 0 0 2.25 0a1.657 1.657 0 0 1 2.25 0a1.657 1.657 0 0 0 2.25 0l.483-.442a.946.946 0 0 1 1.284 0c.623.57 1.608.114 1.608-.744V6.37c0-1.193 0-1.79-.158-2.27a3.045 3.045 0 0 0-1.881-1.937C18.493 2 17.914 2 16.755 2Z"
+						  />
+						  <path stroke-linecap="round" d="M10.5 11H17M7 11h.5M7 7.5h.5m-.5 7h.5m3-7H17m-6.5 7H17" />
+						</g>
+					  </svg>
+					  BOL
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="ShippingLog.aspx">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+						<path fill="currentColor" d="M4 16h12v2H4zm-2-5h10v2H2z" />
+						<path
+						  fill="currentColor"
+						  d="m29.919 16.606l-3-7A1 1 0 0 0 26 9h-3V7a1 1 0 0 0-1-1H6v2h15v12.556A4 4 0 0 0 19.142 23h-6.284a4 4 0 1 0 0 2h6.284a3.98 3.98 0 0 0 7.716 0H29a1 1 0 0 0 1-1v-7a1 1 0 0 0-.081-.394M9 26a2 2 0 1 1 2-2a2 2 0 0 1-2 2m14-15h2.34l2.144 5H23Zm0 15a2 2 0 1 1 2-2a2 2 0 0 1-2 2m5-3h-1.142A3.995 3.995 0 0 0 23 20v-2h5Z"
+						/>
+					  </svg>
+					  Shipping Log
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Representatives.aspx">
+					  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+						<path
+						  fill="currentColor"
+						  d="M26 30h-2v-5a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v5H6v-5a7.01 7.01 0 0 1 7-7h6a7.01 7.01 0 0 1 7 7zM22 6v4c0 1.103-.897 2-2 2h-1a1 1 0 0 0 0 2h1c2.206 0 4-1.794 4-4V6zm-6 10c-3.86 0-7-3.14-7-7s3.14-7 7-7c1.989 0 3.89.85 5.217 2.333l-1.49 1.334A5 5 0 0 0 16 4c-2.757 0-5 2.243-5 5s2.243 5 5 5z"
+						/>
+					  </svg>
+					  Representatives
+					</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Maintenance.aspx">
+					  <svg fill="currentColor" width="18px" height="18px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier">
+						  <path
+							d="M187.698 120.105c41.846-15.492 89.309-5.554 121.432 26.561 44.941 44.941 44.941 117.826-.002 162.769-44.953 44.953-117.828 44.953-162.781 0-32.25-32.25-42.125-79.975-26.367-121.934 3.977-10.589-1.383-22.396-11.972-26.373s-22.396 1.383-26.373 11.972c-21.357 56.869-7.968 121.581 35.749 165.298 60.949 60.949 159.758 60.949 220.707 0 60.939-60.939 60.939-159.758 0-220.697-43.541-43.53-107.898-57.005-164.614-36.008-10.607 3.927-16.023 15.709-12.096 26.316s15.709 16.023 26.316 12.096z"
+						  ></path>
+						  <path
+							d="M161.408 118.082l52.879 52.869c4.331 4.334 4.331 11.381-.001 15.713l-27.924 27.924c-4.341 4.341-11.373 4.341-15.714 0l-52.594-52.584c-7.999-7.997-20.966-7.996-28.963.003s-7.996 20.966.003 28.963l52.593 52.582c20.336 20.336 53.302 20.336 73.639-.001l27.924-27.924c20.326-20.326 20.326-53.297.006-73.634l-52.887-52.877c-7.999-7.997-20.966-7.996-28.963.003s-7.996 20.966.003 28.963zM836.42 904.635c-41.846 15.492-89.309 5.554-121.432-26.561-44.941-44.941-44.941-117.826.002-162.769 44.953-44.953 117.828-44.953 162.781 0 32.25 32.25 42.125 79.975 26.367 121.934-3.977 10.589 1.383 22.396 11.972 26.373s22.396-1.383 26.373-11.972c21.357-56.869 7.968-121.581-35.749-165.298-60.949-60.949-159.758-60.949-220.707 0-60.939 60.939-60.939 159.758 0 220.697 43.541 43.53 107.898 57.005 164.614 36.008 10.607-3.927 16.023-15.709 12.096-26.316s-15.709-16.023-26.316-12.096z"
+						  ></path>
+						  <path
+							d="M862.712 906.659l-52.869-52.869c-4.34-4.34-4.34-11.377-.006-15.708l27.923-27.933c4.339-4.339 11.37-4.339 15.711.003l52.594 52.584c7.999 7.997 20.966 7.996 28.963-.003s7.996-20.966-.003-28.963l-52.593-52.582c-20.336-20.336-53.302-20.336-73.639.001l-27.917 27.927c-20.335 20.319-20.335 53.299.003 73.638l52.869 52.869c7.998 7.998 20.965 7.998 28.963 0s7.998-20.965 0-28.963zM674.469 738.186l-391.26-391.26c-7.998-7.998-20.965-7.998-28.963 0s-7.998 20.965 0 28.963l391.26 391.26c7.998 7.998 20.965 7.998 28.963 0s7.998-20.965 0-28.963zM343.768 279.258l400.374 400.374c7.998 7.998 20.965 7.998 28.963 0s7.998-20.965 0-28.963L372.731 250.295c-7.998-7.998-20.965-7.998-28.963 0s-7.998 20.965 0 28.963zm255.917 112.52l176.732-176.732c7.998-7.998 7.998-20.965 0-28.963s-20.965-7.998-28.963 0L570.722 362.815c-7.998 7.998-7.998 20.965 0 28.963s20.965 7.998 28.963 0zm214.393-149.914L631.53 422.641c-8.037 7.959-8.1 20.926-.141 28.963s20.926 8.1 28.963.141L842.9 270.968c8.037-7.959 8.1-20.926.141-28.963s-20.926-8.1-28.963-.141z"
+						  ></path>
+						  <path
+							d="M945.721 131.005a20.48 20.48 0 014.873 21.176l-28.201 81.531a20.481 20.481 0 01-12.659 12.66l-81.541 28.211a20.48 20.48 0 01-21.179-4.874l-53.32-53.33a20.48 20.48 0 01-4.872-21.175l28.201-81.531a20.478 20.478 0 0112.658-12.659l81.531-28.211a20.478 20.478 0 0121.178 4.873l53.33 53.33zm-73.228-15.302l-60.012 20.765-20.758 60.014 35.194 35.201 60.021-20.766 20.758-60.012-35.202-35.202zm-421.165 544.57L208.763 902.838c-7.497 7.497-16.502 8.466-19.734 5.237l-74.541-74.541c-3.223-3.226-2.254-12.226 5.248-19.733l242.089-242.079c7.998-7.998 7.998-20.965.001-28.963s-20.965-7.998-28.963-.001L90.769 784.842c-22.28 22.295-26.003 56.877-5.249 77.648l74.553 74.553c20.778 20.76 55.375 17.036 77.654-5.243l242.565-242.565c7.998-7.998 7.998-20.965 0-28.963s-20.965-7.998-28.963 0z"
+						  ></path>
+						</g>
+					  </svg>
+					  Maintenance
+					</a>
+				  </li>
+				</ul>
+			  </div>
+          </aside>
+          <article class="col-md-9">
+            <div class="right-content-wrapper">
+              <form method="post" action="./Customers.aspx" id="mainForm" enctype="multipart/form-data">
+                <div class="aspNetHidden">
+                  <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                  <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                  <input
+                    type="hidden"
+                    name="__VIEWSTATE"
+                    id="__VIEWSTATE"
+                    value="gYsrCZm1IptYy0KoGTEsteT47KUSnc5PL17ydO1Ski++Zcd2N1WHmNWmpjibdPAa/7O+jjmcAFzg++dI7JXVsH3bdVgibOcRlIhNR89BciPNhI9kQsdvicYYceLSovCcbFmatYMle/Rt/2+NhlBJmSkovsfJ8aaF2o/HE1UzP0WAGu6Dk764L5E4k1M6lmOpQgOoIo+hBtVbGG3xo2+fH0Qxu8kS+1g34/B1jX7ZP6ZmGudnqOQUtN24+eEcPE/SSVytiAUYXJsA4lEnotX50AnYAGnc2LkAmp4qH0nv96h1k4jKqfsC9vwsS1/7XzA6tIXMhQaRSTA8lUTVFxAPnvKf4sFWh4gIXxsRZDFHmzHBXECotCRwn7lWQwiVKOBnBS8nSSjmYRf8ZiPwtewt5e7V+MeMZKxuIkflQQ+MzScjLTxhfAU5VECWDXLdCDhhqf9+KKCOf/28+Fl4blru1l98gSAH1i6iu+HQWs1TjcBZ99Q6PJfqzjJwXiDmshXqCwGC8M35eZpO2/TmG1/qn+oHmBNIyB5ijDs4GFQRTKjEwC3rpC7YTZCQ8X0l0J4cA5T2IR1npCle7uZ66oswFCansyYKs7aq0kBULNmyMzWn1/cdCz7QaRlOUuues0nT9nIrF0KWuIX5OuJnbkcdchhinQH+qgRgM7Bs88Co2z33wGo3PaHQ2BOV02CNoxXg4kkwhJ3fNM0C22p8gqLtghyP/hjiAbzoALl8MRCNU6R1YS82Lxjdcalw46nUVdmvMT72vwvuuDCOJSACc1cdTCfNvHLwmIxS7CLbYHIOTSMbxaagvWbBeO6cBLlkAuc8cndXCADx1xXCKrlj8sBQiR1UbNdVSs27FW1Mzr7CpAD0tuCnX2+iYED0RafC9jAFybUgd3o/81+l8iemo86ziL/YxpJnewj11YuOANesQpNowjWka3FWUZXhYBQ52EyyF7LH+8m1W7vnuRJmMiZ1vPkj585lQNF2Yj3DQSc4kViOOKn9xFiwo2XjEG3VHijDkMKTQbOeb0LRo7u2uX9kVV5NhHIzoMr5brzNSIhQH3fHNPwchHsO5dSwWy2M6nL0sXH2Sh1Y/lmgX+35qo/V3hQNk0FQ5iDhNw6d/om5iyqMA6uRxnBTKirj1TQL8EV/Oe+yK6j+ExH5eV7NSedVuJ5WdF/CAcVqTp5umPl+VufZA/tvazRAktMKMcT3XpymK2EKmXMeU+kDUK1CLhZciemANn2sX8dYVbEfivfarpXEjQJb/vjEIoBnI30OJX3f9q4uBq1RXO3BsC1R55Tia9mCFVdvjJP7JhB0UluCo7drJ2BqFgStqTMnl+RaC5hmOE73cGX2QsyN5p+oSmX2qZDzojnWRodUL5t6UUlBVs/ZoHm17EB3sGF3SMktUVQOknsjsMDCyezaR+H55944jd2qXf5WsOB/OOkvoAKT4m7q5yU0Rm4itv2O3vq8tx6V7wfza3xLjUbQyPOI9aFNeYek51MtzTyhx0t/EdqWz74EwhFXeeZ8mPdJgMpYMiydieW2KcZ4Ds6kfoRUSF2m8pYes4MOSE50Eru3/uhAxKYuyJqtXIsrG69y4XXX2V/e9mLWcKzAud9v7+Z7R0bdx9ZjXnpsrIlkZA8yEetemG1O1lCY6G+9yBJW3ocISe0i5uUUL0pew9sx1jf8aWrBdmw6KZuq30xWhl7VZfAXR+msb111w7SrQOE0XYI5YE9MJo71t23DfiJTkzMud3gL2STa8H8Wc+datDfjzQAsBpIZo7l0leFFzvvEh4x39Uy2MaQdLe21He0ds5uLRmCKM0pvxxJufkvrBekTtKrXKpCOiL5qwu7QBlYD+ebAsi+Uur3pGDrP9yeGCS9IrmqGyp6LlCr4ZH4kfcI5ONrQWzNP5TwHeKuOq8IpBay4RLJ0aZMDZhUYOcKRtCoiCqNFn4VANX1oZejSC7BYmdI6WMltZ4qEN0qHVKpi+AHpE5AUAIadN3qL8G4B0+hoODxDPKFfCnDndWHGasZ16DIi+3dbkYdTgzBY6JDpSMrYtzmBLNxaTxlGusehFygdcsZn8R+yLDqD284Zhdlc3jiYE58TzVadTKPwmQjanONT4+Jml4XZXM3dEtP8gQevzailS9sZ/wtnmH7n1NU+XwUXQbxr1+K4nkJOxxvukbgCL+KaEeUKxcppi+cKR/L9BK8R2XD7m0TZTE92c0CODJiXiq3a+hWBOlrya5Il6GXNyHhOD5v/0oyqHxRhEISFdultg3iBjQaylTUQKYOrrEy5zce+SYCd8t2H3+f2YXzv8HmZu18dXlxptynMJy87yveaOIe/6LFQ+E6QszP+VCiFcTXp9KQqp8lPJ57jjMNK6JkzW3o0k4P0dXfgIFiptZJNc1vamRVuD7NnBmolWkdGNmnJzBuikCoeT8IGMHM9VvJshlHstdCwCfsO1cnrEwBwYI252tBKEO8E+D9wbMp07Ie/pBig5hzKHjxQeBfRU/hcZou8ISfiD2G2zFpWHd5Is/F2YCHWB/b1ehMciQLWwZ2Avd0edkdgH7kK+5eboxLa+THpByxpX8A4FGMu8J4AATpiLzHSoH6+i74uO/HT20AIr047l8lyn2V7sRSmtamrW/K+KZqgES4j8vItSjRNZkgSYLMZEWez4Th+BVzDDgmyLs3YzbNicbJs6f6A/fjk3bu19m5kFCXM/kWnss3OTXIu7nxnGTQ27DZ6yMsYjUylm74iW4UWIMyk9OxKm2n1p0Hsl1HQFN6ZlTzPer4RYCBOVykBl1MQ4PmKePbSLh5uZuH9cRT06+UOfjFFOCqd94CvXo3OyOReXRLfp6KsIhjzv/0L9QeaVS1FZv3f5UgjMgz+keL5BnXq+8NoeEBzv6HbkIRcIbSXHcsslV4Rpib7Op7EmB+XdWakl4e/Lz8xokGpFe5LaD7U7zvKe13ur+SAFMatYJ5v1SDJwwJqfsLjkNAx4GZJh+ryk/jU6gUV64G2n8ozQtx8slkVtmFIupjlqTkeq/gNgIOUT8WruRG8jxL2/2BzwL3dkUGNjAxiIgKfGLL1QGU8EAMAe2GMFcFpU1iD+4KMKGZKrnn/nYIcH0iqgdUy+0EUV1D0VDCRWGeY2tX5pBftnbVUsmaB9XW+zdBYmRVbMKL9d80NFSTg2XBM1dN9x0SvS1N1y3nh6HTI7SWQG00XmoXapxbpdHxsJnm/iytDyB9BVYhC7k9gDlsMdBeBa3NGQaMe+5/QuBKP6iZRyFJEc+pd4TNKZ1Ix6lCjYTDdEnyx6P08t9EGumXBfzk/P2FdROMgwSgrp2tnUaLlD5EGlBgYTIpaj35x2Q2RJ6zQ5njaNK8UcBM6s1Vo8Utsw4I4KEpiwzJHBNqjKjIJwduHtwm97HvJjt3AFhZJlPflZ/5a+TgtelwDl5Z+wI3ZyxjTwxm6rFoV8pUaz4q06mkoebn+qDMCcMoS8tvrCfnZ6JmUe9eiy5lFlF16rfZH6BE0FOTlSMxcsqVRg5ar0Nm+UOsjUALbJaxn1U0Wn2LtJbeW6+1BTgjxYTh4ROROs1zm122NXzy3lHmTD16LxZFFqHFBhaesnz/+dPrkaOtL6vdl9IkjgcVTDVNouqBmt6+FjBx4DSjPO1G5i96KjHsEq6W9vFzY+WhOowqkTufxXJoGH33NntdHnUnja2ybMrBFBRcw5u4kucd6yMfj4lAPemvJnuvHw2rbxvhBVV++N1BVEiAU9HxmTzvzANm7bydr0tHvoFMCjG8sp2c8qNtarjIebg/N4HkccpDWn5XCBedOlqaymEImviy3i7JR1khRbW40RZXqhDSslD8kVj+fyrKuaFj+IxFae0PCeKiKJY01UrBhFagEyKO0jHyw7PQ63SNvVTcAx8h5ID4PGuSslVnbrbM60gUm1koyip1hMgraMTgHkaU46Ar1s2nzLBuL+Q5PGDxBxRynSdBFAt+vCeLDZcSy/EvejvqiDJY9bJ9N2YAEtf5RtuIgNEFZ2rRQjab3cPXngqvf+HfOo7x/UgXErRPwoy2GHgHpYy/D7htkBpibeh1OAvo+7Im/tXeeMJLOJtaJOGHG3RNSBnwqRYjgluDCE4S19cOzlIG17LURh9D1nXpdSYciXkPdf3GcdE0ptWqVbkPrpO71ZI9KkRBELlVtyceqnwqX96fhly0VS5JX1xoRE82evOkDoDfuRMgoMirmoEp/r66H7Z/7E249eeARpyVQL3lFErlxRM5d7uoWLAPcXCp+dE5pMxuvKVtuAXYpr/L60HBizksfN7ktouB4UtlsddJs+KzejhMQx2LT6qLUnDt2iN4qX+bsCW8D70tuOVXSdhXA9zQ9h+fnss+ztchC2Tga8wgXLl9zghpC4DDe9hwF980p80PW0UFFdJq/hJ8Patj717AUcEMfgzSeQeln8kLl3DNl02qNswiDh8nO4vNc42DSILR1TDlHjiw0s+iXqd2gpZSBZ3ACWiZHCx2KqacCBcjmV2B6tNkX/oQwteKIrW88o+pnYYbstwbFZCZ28tDsdQM25f9NnT9n0iAOCxT890PiWvCnA3qyG79EEQYQRhtly0/HdEwMdcHmzoywj91qt8Dp0eIwi0o3J4ZpY+70p5qB17KqYVhj1hTaasxTjWhH9lr+ZFKuy/k8TZQshmCYHzFq1tMyUnpBp/4+Z5sBwxiKLUxUJFi5/AI4F87Alrt1j/rFVsy5ICSMceBiuSrFgD0YxrgIXknRRtUxdIkVfKKNytEc6B86TG/7rnzkTdoVlusfECd4StnEe7F3YXlU9252t3hqJ4cXX74vaUtDlPbzNASIvslb3CyCl1humd9b0MytMeDDaLcsn4ZNPzFcQHmNZKzUbWPoyFCNaGmi1VbY2W9/dOmhOMNgqNSjyR7rYXWbPT1lvAGX+GwAcdMGnC/O6YIHQAdX27G33vBZgLnLVoe017vWVW3ALwwjGDk/vKs1ME+k8zpqWFmcVRzs9AAnCHv/Gjkb7PgP37m6rWP8sLpaENePIUfydch83KghIETTO/R/rJoI1SL3T1LxgUgrBETuuOqGJdpXHG3W97QUBtJ0tWNKGmnU4WRsh1u3ejx41OmKCTNC7I34kxBgk2KrcqwPhJ18GMuQAKUWkw/LrLGvXJULkLyNUQo6hNx+Ul/WGB38rQ50Zxp8s++8whFO9gl/w9QjPMjtQn1F9mwRWw6UTx4d2W53IHM4QFUhDWRlwkGxexOOyu1hE8oimk6dJ8DxPvQ8GHUPxj55eB2M/4n9SGqhERC0FnzVRotPzNvAyl+eMnQMcvGyAshGLRocfH3QTuu30vIDSbpDssAQCQsS313tcGxns7j0eup6LGdeC/Q8uYzSv5Inqx+k6pY3bClAS0kSYuqzQglgp/sQOVxlboTjbvrm8utpdDuSd2RXTRmUzPzj31lWHOyoy86JZcTIYD3snjGnVz2TqJo5z7jIaUSnaVlZJUkM8hubZ6feDQys3rHUWMZOKxTG1oAwB3PGXES4nKEmfK2xghgcQ9Nib1TfyjH1Fqaa9R9KRmyJL/MF84uBdvq8axIEhT68W5SqYxZsJNRgaQ8bmmbehfUXzTSWWmkud62IoHQXsE7DZBcSz+V8M3B/xlajdnsXwgrwcrh/ZSs5+2c28QwauS4BpqypWaCLXtlQ3FrlPZ2OIM4gOryvLBNBIPnECQe99Vt27aTH3yIXXShN8Xk5pPCeqhMZc+4OI4OSrkZ5iEm4a3qhTvfiYjUlPdqIyfYFygvWEIMO8/1O3frLCSaOLLh79tuPxI/wr5MI6vv/K32om6uCetPI52TwUL8Zq23YyB5VVTJ0JibzplJg3PoyEO3hENOmACexo0xfGJTCt8LXFdD/lU5YOUJUpDDmVq6C56UZh6cjU9d54/tCbr0Hpw76gKF1ijXk6IVe1VyvYGDdObGIvQRYpBpm8YMAPiGKr8lOeySE1ZEdQiwJikdrJ9rwBpen5NRK0BqMSFnyaq7LZO13H5jlhq4WEL4cmAwf2y3jaTE5tQRsCXcEiALc/4kU9nxGDaHdO54jKq7danT612Ypqk/vCYXPBJzocJcLwmXBz4zxtxAi0qM0F+hdhG17t/qPaDM5ViOgrYrn22iKBg/220e3+OsCSqyeR2hD0f13iqKdMN8vdOBAucFH8Ge/tQHNRy+KferrLS3Xu7W6c/zvWBaV4Dsd4uJe+fCbrjE10tsiQx/SwvcLp1Pb85/+GnRXCGTqKpLNXBuRu3BJiTNZumO2SwaUtrp+vOQqMJYa1OPNlEr8bi1PMX/Brqo7drSTxbTaUKncSfUBxGbzpGN7NNS6M+kdUI3cMRStb4GzEjBDeg0NymAinqUBHx7H/pQsEQtnwA5lnymdTXOhDvMplb+rMgyM50/iTUDcpY5E65G1jthHEfNqeYrLuwizzRlzMa2XpduvlNfrNS32LIEM+jkvycOOpYzVxpM8216IOXGIW0+kZL87aSDQbbVQTZcR6fcr/aYn51pS4ZiubdLjxE1IUGCjwDwa/AxcdO2WtZXXmr3/2j5CuSFfxqOyIDi6sTULH/cY6kjwG7pmC+XAAY2sAhNT4r1pL3/m6+/tjXSZ1kbknuWzi4w7T6sFsqu3/yTxWHEd+kLDvE+QEaBdCWDT/hq+FIljkVDMyVMfkhLyI6C2LzZ4yZC15LNnn3qirOYbXVVW7xg/+/4vYAexz+qb12PKLbBw6FEiinH4yMW6ykZcApsOUX2b9DynyYvZ+W0mAyA3M/Gm73uU6ShBakEI12crvPw21FoN01+XX3oZ2OIqA7jHqamMbK1LLZDzLLVj6FosMiNN5/Vzdjo8fyA6Fajk2ne/pAfpSVol4BuKySN8NfX2S63B5s3EqFp2UJ+fcAwTEWEkpr7HUOsAz0yN4MMWaEeHn82hsNasua6oSytfAHP8L5T5yzCggxE1T0yCgtH7ok3UWUqoglnQHG1F+FPGEY70FnTXTvtXpp6dgJT1Qi5r/tf0P6gZgXpCGfN69Vas42VsIM4NneTBiGc3cNFPvml78VcdCFWNPR/aAjrZGeaqm50TOmpX8lZBr3LjBO9Z9e+2C5tq05ar9LzoHjdmGeunw5NbLctzGcbT2i0Y0j3v7IlhvMJkdso+UBnrVj7aATZocqKZTLZ9t2/CI0seK72aA3BJpJFFlAs56JddM5tteyR1b2TEWXtXL9gf3fgpJClYUS+UGLozx5YXyN51axazN1EVR/+T8m23vN4iGk4i1WFLQ1ziDWr8QClRQctquZQz8uzI8Eh3ME+5C6Fffir72p7VXkhMQNFpYPzefJmGo7UkGRh0SAGhcjt8dbH91HdsPwtBXCsZfrQzsY39sODq1Fm4FxGGYL5ibgTAkWHEAJkAFxHjQHP2PyasvOvYwB1fpL+sebx5a4LRREdMBjaJ0m4U5XPVVAa4Xxb8Uq7XqOvdCLigOzN3irewXrImW6XIQDU6u3z5BErjDFAA871FC0tZuYwvMnuxUAoD6SM9CdZSGlYBwyNlgFR6wOA6qIq/4PRXV13MwWjtdVs0TiRPaL+NxFAaEMXVtwyPGbWWMVFm2siSfQnebHY+FbaxYzpF2W8Ue8Zi1AQTfHDiJ16fyByQfuWaASm6pnA7Qk56iLgN8chZj7koECIYUL+w8OmTShkGnR3lGLviyIzfhd6BELtXlpnuXBGkQwOVTgiaRAjFHUKOlwgyT8zB5if3+Qab7w48Qz8eHeFX42GI/pPap1VlG6bkQtuRK8dAlFgpq+Hs6rVmOlSXiQNOUGW8JC80xyOePY81GTIf9/EhQqDlzc9vUdqU4nj67rT9mUNE0ikWji6hFO72+FeYtXSEqEO4ab1xakc+M+kl4bLuSHIeMIOSy10gq4GhiD24b3oy9WokEMwAjshu7c+5KnYg1hYMYjtiQe5C+Td21KP2/xF4Duql/Qjy+/liXY4UQZMxUF1aw1EORnu6Il6pnn86tDsgIPPAE1NF4W9xZ2ThD6DP6aEIZULuhTARN+UWz9XORNyUz5eqyKQbB3EWAAdjW9GJV/4WrPGTocsLdvTsM0BVyZJ44ykIuqcS/9H7GVANggnpzclaE9kTOYaAh5yi5qCi4RFvI+eeAr1PBQCcN6CpFX9AthWKe/zZc5haCwln7o7owKurTHso2PoamLdB0eBobXh3cyhSHbxNpmgYRKt+mabw+vR3H6Hd01jjUIe4HVBcvv0HKMyr9mXJYzCJxQ99hLD4Y7KeWPuT3tWtQppv42tTOZ4+bHl8etVRxGiHkYmeKpFeBlqwRXk/7yunrXU8mhROF/70XbcMSwSIRgG2gVNoWmDWfG1H/qPhVv92ksOcnhhpnuITRJ/65DG3QHdT2B9SoPvwncjpSMbLUlLd1eoIXb+7piO0QjdPzj4HERlJaAdROTJiRvoZvVtffo6uNKvaukCWPAHxzW1ay+3egqwNbfTAYBOAFeK3/glrnJxkHQIylKC06UVZxikBq7K143MdYowC+XRTqB53SPpi3VEg0cv+NAe0lvLSBh7Kqzot6deRyWjEfOxlcDrtL538mnNulU+5J40cetkIsNcfOkmRbJsff9KaWT9NHsaTxIIF5P9dZYgv2lVTwyC6Djx8H29sAaR9OJYkdtaTsq+NfsuZJso+Wc9Jukpt47y23tl8Wt+ZXsb2jU4v7M6uGN+B53qJc4IjqaSXEYaTxj0NhuZ9Zvjlr3wxVKAYcaQ40vgHx+I/rIYz9okFFp2D4rq+oZBqp1Aksyu+iVq4fBS848WrqO2Y6SzWFbH8WEe5L8f2P+RLf7HUdJuXH7X8kXv2+aCpLnrqnTSsVGMVz5TLc0yR7bf8+EDIyqMc8jKXBJKfqzHYbgEixy1i4F3OpCXVOcPI0M7f2j0X6iVbs46jzYcGa4gCII90sfOcpSjlK03wG8JMqnk5xKlg0MzF1vC6GhkUqoZpwoF8LYc3xPlY/oqjO4pRM+pKgYCQxA7hOcTYY9kLsknIOF77EqGXmUGBEubx3vel7K4ZAH7/hwD4HMXKUjTyLIzZxM4i6HcM2BuGMHiXBlUDgTy5umZlLNr6d66zMSdErdyki1EgMakb2ym5a2rvoRJcSpsWafvyKa7r5s6OfXP+Cf2xwA+wilDo6z+J83L3aTsGYr9yDkgJfjoKu/P28N6CnySOB0cNZ8IduFCavxb2LrLDwtjpfT2JnouWsvxRTezSP1tevv1oayYpDU7BhKVeG2rmnuWF545c3Tsw61YdQ7d12DbUY4otkOfPPqdVYIt91b/r7YLd68kc3+s1Ata9JzZjG1YEehrkDU5lyesvprd1HuJ6iQHADoeOyGuFyBq8UxtiJY1l7niTF5gqOUNWHctkNG3j0PyTd05cJNi6EwMK3dNrn6pEMsx/LQm7yjp5KHQiuugeYhPWClMBGYxfqqGS+RU9pOjeAximWA8fAx9L1G1U0X+JJg29BguDo3x1E1Y0UuCfxImKwMfRHwfD2IuGw4R/Ld1n4I0TTxFiCc7SEczR5pp5fPxlplpLNjqKIa4NTRXKPKl54TSxf8Mldx16/uMAN7IOfShRi1pGP20+SZmmHsIBGWWu9s6K3fi8WUDpLd8h7mBI/wCN6W+/IpxkRWHuHJw2H6hfDIWQfNcApgc/G2EkpV9f7CeL+WvS5XPetMEDnAlMAezvwipoVnAgK7xTFQSYoIxG+Z7CpiTAEBnaxx75HZLod3dFdqtLh40UZXK6ImnsA2Eds1LyLa7sbVSOz4P2aApOcsdhrH5AhFXWk02eBbdgNk/omdADiin9XdOtU6bkHWFIRXcLNzHABNvhLoHaxY+eMkK+JrU5Yy2GE2xfyw4Nc+lQ/bn90ED+ykb/ItU9+BhAzjFTx2JEaLtLLZuNbZnDTrIPSMRtSeIoOYcC2lAYP0BoGBMDTZSbF6UdzBr79CWExiubwNQEoBdi0xpGVkINUhMkthOMHaNk8RH/oyIiVAiAt/dauIS7+5Gd19h8Y6Jww+satu/9l2wVuFhL7QHVOrdF0UmB9mHaNLsQp0jfg2NAaX+X1nfi9mgI2OaVsJOgPmWdZ7gSkGLO3HgjlIOzET738hFOyJhMEFLsP5jD1K45O/ZtHBDTogzr3N2hCXJy4u92vR0hMBQ5UF18Bfo+NZxmbfvmDcZbDI5+WlyGyXdOqkxi8png5WFkU8wKf5b7JPfxfEbgTqOaXQMgKZfvynqNYnYRdTHvTCDh2kaSwgyIqX/bpy+HOXMQ1HRtNa/GMy51xNU5E6X+VPft3eHa+2AmuPPu7z6pEnPvhse8VT74apTdDtg1mMOuz94d8HYK51Zc7AAYlvtBUZzvIx4bay3ZOZ7nLBlN+xlXTPK9jG8szVC2/itTRQWov5VQksMEEjf6D8SwjThFjErAsl9csKO7BsfUOeq2s75Qzp9mkMkCQyjvadF6XfTFFQeUJplJk65Bj0WQ8+TJ6gX4+WanxCeBz/Tfyce7kBhYWCTSlqzscw1oPYn3RYxylGi2UpwlnbEADeBM3sjihTMP77QPSw9rWCEx7DQQybz7gjwigPyIGe3RzpYALoqh69nlCdHM2HTKK4GMeWyPR1S4T9Kk5IqF3dGxVnug0/7gPYQ3SM34zzrGTIOebPY9BDWLTso9+o1GAa6cYCJphoUBBghjaF37EB2WlXGSR0uPUvUwZaX9hVNGC0z6pdL1Tn5M1Eb/Ce6WfQCQTT/um2LWA1Ji2N79O1ufucAAX7+MRaerraqIox3+n7tBwn3b7e1S1V76BLtVDKAmLmdEGQOz878+KelRFaW7lBYvTt30HDEe9L8DURsiZvoxnbCqSvI1yagwAKsgmS6paioP01Cf8mmu/6Dvdyehn0lj50EwKEidkaR6Mz7zT7fiaY+aoLkoWo5DRqFuj8zNB/PkOLokP1dnG5ZKEXMF1ptt4TZO2foT1XlFAGg26JS/KGQevJ1BUDQkEZBLl6Eid/C3PALFyDOm+gQSWVUF7gHobZu7lB0aNwEQCAGEkTHJzRAnYImy732ny2nTL0Z4RZxx3qFW0k+GRzYfQFGx7EDLpXQ/XzuyFGqceYI3+kKMu8xGr+BSt+bzTlSNcr7m1On2O6X0dcMxhJ6rpCNCoODPc7eOqpVN1smJ9kYght5Lby7XcXqzhDNY3y7+EBWJM9/0GZsovwcMRRL1+H6HOfrKi5utfIaJh8TNZT6enmZiSPWBi+PBViS0evhPXefvcqx3bZPYu13M2ULPVx3OZ2Dsa57CO1S7SK+RQRcfXEmMtn3JiXTrYuvh6sRWTUPoqHXlAnWsR4BK43JR9nU749eJ3zODQc4owDQgK1NbdwR9P2bUpgHj6HNzmvfhFqSNsI+MQHzNN40+geAh5UFLYPFg4+8XDV8pMyKG+1f3dy3vDyqOQhE9OAnEGudZRDlTCZ9mwCT0i6jVBrO9o+FWawwNPAqbZe/VIC4AtgnYjHsia8JUQHMyzmJn6YCaGsDlODxyd2WwmUk6Stz6fZ3DG2CvygTMtlad7xO0r8kO0EzBXE/FVrt+xjbxSK+8qm7cwXhPRAiKlEqbhu2UcHcpdKD2PCpJa8Fpp++7EFrW2UFIrBCJ741pwINMbKbX5GaHTg5cEqrmPk3HZTkAJc+/bB6J0h+BJ+zQj4q0wIRAy5a5VWfFKKSiBuHRjSoz3jdVtGqYX8snh2YmmjHDetW6TkNEim4AT51KC8WcRs8enjv623i6deJyATRcBw0G7fPeRZMH1+iMbdGHReJ1utiPUCHw4ilOxDBlSduuiVZS6BcVqwNoI8QWuKH7mjQDcs3pBGMK2DwSOU6CXuH4rDeM7iRmorV4LHSA3BM76UCtBW7P2mh/FwvSjpem5d8wJsRFn+kYhoDCJbU57hrJupqzhM6JFYEoz/rleYp5SQTxhclrZjgO4Fb9J31MpEFS9muVKZ0ai/AFAE9EFd0vA26HCftu4EKNC0urvMbJoCInLjZiY8tLFmiZ+4ZRhL7vQko4du2350y590hZAcxzBg=="
+                  />
+                </div>
+
+                <script type="text/javascript">
+                  //<![CDATA[
+                  var theForm = document.forms["mainForm"];
+                  if (!theForm) {
+                    theForm = document.mainForm;
+                  }
+                  function __doPostBack(eventTarget, eventArgument) {
+                    if (!theForm.onsubmit || theForm.onsubmit() != false) {
+                      theForm.__EVENTTARGET.value = eventTarget;
+                      theForm.__EVENTARGUMENT.value = eventArgument;
+                      theForm.submit();
+                    }
+                  }
+                  //]]>
+                </script>
+
+                <script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOIjGdbOpV1IiyZmqIaffhiTy_T-pVxniaD5dXFv8JeqgAZ1-_RMkt1wMwOmeAbvdw2&amp;t=638464803187615987" type="text/javascript"></script>
+
+                <div class="aspNetHidden">
+                  <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3F851BDE" />
+                  <input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+                  <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="124" />
+                  <input
+                    type="hidden"
+                    name="__EVENTVALIDATION"
+                    id="__EVENTVALIDATION"
+                    value="GuABLkLyRF7bW0lfplSKgd4M0rbhTJWE3xKkBkiZqk+eXPzYOwZe/yWThn+Q0UNskK1sbXlAc+j8Vdk8hPQS4wwGZlzhI/l2r8u8PQ07UEuTxPCLN1dvw86W04V+2hzeEojwI6p/lF4yNDpv9D005R3Su1kDtiKMNKF9EhFfBkgHEQkc3hEONykBccLE2liX3aUwX51txI4FTQxL72nI3NmzzYZ0fF4OVFaT0yr+gRejtxRBvgAnc5pI+MqwW6Q8kNvq1bj4ci2pBvLLxvhoDLU9wEwtnaTouGQ3KKhLsdTe6C/EJBeDas1NTAVjAIdQrmS6nFd50c+rLwxfrgTh5FCd5cGjXbN0ywZkYB3LFobhgC562eUiW3wPizZ6LPOcOCiUEkXfZHjeysuSxFBHsEqP7+jSHepi8X69FXd6K/loZQcGk4eoe4Rwzr44ZdXUlU4f+2CocBbHnBITVbpEZjiGvLMrtNIjx0+fN9V3jMWvzN/uloSgsW8epZTVmW2c2nU/lMmd7CEtLMQ7wzsVN7M4eMEBiDFqv9bZmKrga5EGoqaDg1ueIBs4pkAiZ5GyU6KYQRy77EE6/b1WAIh6udEmmhS7tiv5rE2UEymnzLOY5SnvoektHOrIazpiCXx15BsGbUG4mWfUoy7UdP/f2W4j54A3Ihg/VbAyFbvPYPHzdba2ETsYh5BewWjrBTgMymV05G7pEHUF5rYghEp5UuZVR1KcPyExwh8+yHg1y6yqTeRbGJNvOwPuSRNEzOzhXiIuVuQtYWhQdRLlIGawR+d+Qb7jZum0pKrdJ5hQzCnjEgzIfR1ZwSvXTFqpLncQFtiJbtrNqurVixNOR7urYNUmcPxPUTmMhs2nKYn6KozCaNjRaBnf8um5G9VCpD/qub7WHX2KxebNzII3QONv5lYqpxuPYl31CEc46MIGbNIJZnfnNHleSq+8/3Io2sdEM3bRjLgJ2QuCbnSakkeruoQ6KkkFF/6cXyQoQradFTtq5hwEU8CUiOQFK3WNekbMJyXVbBPj0NeS5fs63COovE3BtumyIuYmui7SU3LDwHF5a4C0qhIa5LyBZJIub1Cy5Y231z5yT8UTr8VOLH8mjNY16MPOOx0s0EgH5+8h4ONWAOZJDxdQpHhSOS490P1n4+/qTgfEOCofpzft7KcARYT9ZLg7K5+Ceus8Z2A6HO5IEthlXqXwViIIy1ikwyr7hlKvCDaap0iJGZxMqrAZb768y78HF7f6GmHNJt8X0+gG93Nz1DeyODOK0sFLf4xwc0dnXjkMDTiDltfdh6ixnXULihT2FhCFco4ZcXP3dWkbIZM8PlXSttPIp9Ap1STOQNnzTiPHft+l0pyvF8BVlqdELvnAPnYGNQy8uBshUzOYSQJ6CnMNyNVSJiw/iIyPOJ32sbrr3rMjd8pwXrWJo+TBkU0OENA9b8BO+J1wF4Rad4b6OEvx2Hwf+BJG45l6uLV19OZAf58wHRyWwHCsWc+g+u3hXUgE3HH7w8DQGA6o7OJhYuC68ebivjmYO03kfD8sQ7XpUdkSSZ8cHL1vdn+qweBQaOd0M2S1YR3K+/WsUagwYbke5xppd23Ar76pZfHFG/XBxdfwjnqVqq2rmbL7VCdpg3BCUjO/hI/EPWCHsYJ0JI0PLCXzY2ILoPe6xtirKpTW3YFaTKRyUXmEBC7rjcx/L5kG2Gb4qvj5hLMSs+yHG1jsedJlDjku+hYSe0WS2wf27+IWBv8cT8mt4I+uWBnaL4Yu3gf60BqMl0gH+Ji2cIx7n0iR0n7hgqE2Ony2cBEb5ptovz8FR/G8BL3NvZsIKlNWJyLmBaFTMbAEiER8howgMTX0bdyme1/1EExtetUArIxzI3UYGE6wvaWWtJO+JwSU2AEY3aAxoahE+DMH2qKpjh0JeCDD3IySSiu1/9oGDlXdA5ohb+Wp0tMr58ti1fN9Lfd2PXt+rgXKd0Rry31oRpRTVQsiI/080EZ2yLqIVQJ5KGtlcauwD6N1C/wGVZVGyURnzY63ucLQkLRJCH0DH9nRWkimrd9x1XRRlfz/1OumNB2SqRXrvIyh0Kb7z+iOVS4SCsS3Z2/jMQ4QyMLBPFy2y6nQblK4nyTn99Nrpp2LlMfBGi5owh7c3rzH8u49RGr+06o6ezBYrs7yden7wpmEvXPDelgRvo8+zWJ89vs1Hy+Nvz70RDkqqXPuGynQMWGJSGpQbGv3Lk/yM+lwYBJbkutbrELrGQaD7nX3FWDhg+0IOk55OfWJxkLW9bw+gSRnH/agOmCpV5bpysP8VkIBQQ1FogDAgz0bfW/v+sg9q3hWiqT0gWAja2hb77n40wUpms/4qplPV/rl9YNQVIK3YMGaoGV1WP8VyIe1YeXpBVhO3vcovuYOog+KoVzloszvKv3HQtazPRgdvDdcSBXIQiImgnJrY0JAVOjePkVZZf/6T6kODIdiAX7DesnaQL4U4Dv1F89elhMdqWeKIMHGs0MH6wLz7uiTeLprJgIc0uwM3GuPv1WPJ8Qno4Jk7I+8q9nglWvFMCunUhzfaFopTt/J2ByW4GTjnTKIbBOXReQJQ5oL5fsKMIU3MD7P4XGCmItcrwEnCZknJ3QOh1Mt+l9lAE7qiHdzBls42YD1r6EZ3P6htqVgoaaE7fBe2v7CQ8h0c8GW0skgsPS2+n62znt/7TqZr0TgfwWGB1QElKPBd83QxdwbC0pr5Pyd+1REA0g6LvGhDrX2qXuDUqL9Ya7oxGuzwneSGoCbn/vHLib6j03tpWEMj5LYfTo6Cz/bsxEbpIATkO9K6JGu7VKb34++/M3WTr/tv1Z0oTUbMP6P2C6uPYxZlgEjSdJTgQ1ChicLBhN+jXcEuwZOwQ1ssPu1UtsPR0DFxJNw+38oi5NQdJ1T/KWgXKRQbYB2VPcj9aqMLhNbnnemkvGSgFVpXUSBVo5eRz5MZ5FFcJ3cHxXLLbq6qHtiIIhguTKSchwsnsuIoSqwA/Cypqx566JNOSYOIeuRz2/NH7vVq09rvBdWSsVQgcw0uErfACUVdDNoEtHRAtgii5Dh0homXuUQXrdCok/5eRX1axuEH9RRZdFbV4ytsb4EfUsEIpzO984sVWeTJRzRRj+g0NXqhJVoj/MAytdBGaALMvbn3eGmwk4PvB/QPQlk9ccJVKgGD50ZfojMgsPo1XVs+yssSLhaeSw22XBrUXVzH1a7Z8+kD2XyLtZFtwQ457rGPyyuZcYNH0bL7R4y1l8QRyy3DDvvyXNWVgIpm29ytLfZ92vLTiFZlrWTb99JA/HjD40afBaDmUJHKTAOZ9iGmM6Qn1CL+Z6frXb26eBW4Cu67Xh0pZ2li3EGzKx/XKOUWXh+vFgmpV5iR+2Y3bUE53b0RdHGH1Cks6yAG1aDHQyZo+kQtP6fBUhMyaLmtut5uyGhkIPqzjN8HPKFLQnETMcxsv+KuctjvUV6x/3oxruTnvWX5PDyLNfaR/X7t/wUA2IiQsU+LkzYXD4eqj8cTBunTUU1kuZ2GFpyZceYTK5R6LOSzTW+8VtGN5uWUpdeJw8bIQqHLWVLIY5k5eLjVsHJBUUHl1fQGb5rUkDuM+k4ItjuxHvLzGIko9OBJx1hd2A0rqlteNDuwnUQt0tVH98LS/hTsbKAV0r8dWlgws/nDq2c7sN5Spc7rLQF/npiW9LQpjui4794IXr86Lyjh9wtIPBn8t57Eb+AvRaof3M7V2AF9e1VC4gEBZA7Z3Ka7W4YlxyBVQ3N8hkglXUnsAkKvYHW/JMAOKTyLmngmMh5cU9ZQxM3MzoBtiLFLI3bb5+1u8jM0s6i4nqMU+dTn9nEScAh+UB8+nf1t9KkX7oC9VUIP+BlZXWYtFR6nu8GtfVE49potEWEjoGeZG7nF2GTyIy6SLvopdvZ8JPFzsRKttSP6TcsYG8asmATK9b8bjLWyAx3oRiaZCFRP0wmxjEmpAwWseYRoe4QD6gUeWZA3ostW+qa+jmanldSZDKFAj/lHX/C5QqnQ+LjZN9c8P2s0qtbhI/PK1hyrkYEn3uhFRgfvnThOqxroahHARctBlLQLVpdRdo6m48XrLk5ta9mgQdENSMPnAkMfmYl6BbaF3PEQo3OuRvnaOrUvlGf4djHPHawOE/B/vdQvBcCU+njxaU1Q10jlwRyrehuD1zSM6QCELLGXBodBCFo9bDreylgnC7myqC66Ya/wRDH0fdozJ620RmPtdWqugnjkOGTEXfWkChZVnVMGXxiJi5KeWTnTpX6EUcnpEhKonuM8Q8a7QiXw21tqDAJqNb0MlqNo6EEb885enbEtcCJOR8WBedQYlbINEWdduRjzIU6ok6wea66Sc+TKiWBd7twMY+G4FL3ehZciyO7dREdZXIhgHlcTQT3TYQutSPnJ7/ykCLo404iq2W/QrQSgjvbuHnVYLqp+GjJ7yZpoV5kc5zS9ghshMQkHydxZ+yiZqJeiJGYs8T+SxgVimvJyp5Krtn0/h5gtjED/cNymrN5ffYVQ5xcDbZtlTvHUsynAAEDIURLQmdJOQGESYXNwLWr3wTQR2UvioGR57swgG//kf0bocfV4h6xTbblwmI7YnUmjpttjx7ffo+ch7g7EwzqJQHsxrqGzHgavevVXk8CvjAPglbHZy+qWhZunfhblXimTkiGq42GiKP1odlnbY7OkwylHVwTMeQImElGm5v8y1+NS/gNCGwuYcaQwJ1T9NjCUBLY/mtYHskgoLiIgMNvZ/6nfgxrqg1uj9jHZWQY75D3z/N/1LmStLTWViBke5Wz1VTEhyQXW3yqIO5vsQVY/fvK1ykpUks5LTIbYv9lTXbCGMx2s04tRzmqZFeEsLl52Dv81aJTx0l/ciaqeap6pCAoms4y23pWV/OHYdrOX11HI0bD9HuMOEi80My8JWj+Jj8T/wOZt0o8/lFxQBkuUOPyNTZP5fW05KHcZzaHbjx03WgiJtqcFPLkY5jCYiUsahcnwkklI6rt2KpR3O71UPj93VV0gSGlHhRB+UNCab134XPunUVaQhbfrKejlw1SwsIdjFLif5yxFcqSfnXiEEikCuOQthhpTQclBQH+zHgCPVQDJ2R6MD5OJe4ajzpeYnqEvg1o6KIHnrbgbUG/EulZsNqcYAC/zcmB80xh4SyuI+tR+Xq15qe0Ws+elWZomC/CPYOWAKynNozssUD16xvr22vFQV0Ym/3fa1qR7KzZiSXmw5mZucRbhpf6JWIELvrh5RRmc3LUbGCVEq0mlBPPDNaDjwGiwUHSxtFIRaiRgH9RcXFzq4VIksE5NoD/fjaBfIqQANfxURZAZON7c5HZ26vZ5vW6wLC0yhIjynrHlanr6ViLWrw9K3bGPLcnkdfkL6q1SVx9tusReqv4VSyI53n6TM8+WWolskNLk3K1rOAxFnioewxULamjCXujgZMjbt2yQtY6dUFxp8BBSEon19BDTbU/iwQ57E08bx4yOWbtp4ixg6k4CLKenR3u8uSNgsz36IPBXq27b/lzefM57vnPftugAtPbeONtROwGfeA9Er9WeQ8LdpU3aoI3ZEawziYn8ZW+MAz7j+hbm+dpsSz5+BT5TnEOZYHmT0A7fNgUIwrEmS/penMKyHqC1UNRwXodKAIO0TxUhbEml/dgHWgn8QcA1NuUj3dn6t3wfjDwJw685EMNEKAe3EAPLf0uGdOe9ieWBglu1dUu8lHkIukW/gZk5FBxhg1I0osVAQjd/TRtXlgDhZMnqxqQ31is+kFAo9L2AdFNylkUj82s3BKVdBeU5uOXbV17vPc4/RKWBTtoVjxa7/tbIrRbZo87rdZvEFvzTR0+dM/I8ZlwipPlCHBas/XuN7N1gfBrXxhOCt2hcerIsjBIeAEU7UY5f15Ema8nAsWvMlpM0AJRNMACkehobH6e05lzsVaC/SHC/G7z8zMOlASQE3SsTrthJphMQjbNRJ+cs0Vh2nUdVOli42plgclSYnKTg9VhFEINmaHgu/w4+SB9bbLnRuHPenSr/vJyOdxmaKhA9MXfROoQhAcLnNiQGqVo41CjTm7sr9q7qpXfQAKA170mto6WQsRUpnR2+S/NO0Y9eTpTGPzfhfC8iA0M1VglbY7+tRzUDPEFloRrLI5faP2lzHFacdCYhLZMMgkSt1sF2SAY63rkOPMZNpI+S116xUD/ku+orbTHcOJLWHIhzCMAbpdBxnTgzoWmZ3fk2ye6C11PK5L7MDaW/yptzH/pQyOn0u+vqev6hoj7OnTrGKLkLJmtA+vE9pXac4BPhLJrz0pch41uGiYvAjcmVaMJ3rAxULW3IdeJEVzX80xQ+zLiidw/qIb7Mddq/siIvdOKjPpoYXP2PqVmfd8KBQX04p41COJ1PrOsGaGtpAUUZKYliE2dUIvOV9FMZduhjiEP4/B1CKE5+DDkt+lVHFNE/cfm9F+Fm0Ej5Df2rmHH6oZMMQIiRDh+mjg9Lk+5CYxAKdY/9WRv//g2MDuOrDvYdmx2iIUQMFGlvmnjbWZ3ZXe80DcgQVnsbOVfirip3EMebBon4Q/8JbHeWAsQuplz4tDGKFePwEYtu72f5l82LU2ry4s7NPDbuzhnntHqHBK3JYfcduWVzITLwYR0+WGN7u/ibHUPSx/vEpUcvcV637x7vqSms7gLQgZxE/PuC6hZBA+pmKgyCRbBTSmLnCTZfUGuh2/hg4/78C+wzjGCtUVtCg5X0CNLiomvcNRaNIPdUjlbQ0t1DI+U2y44x1lriOG+XGmCu+RTIihFIdLmNR1MRqCwzGm4PH1xOKbK3zas80BJDoO9PwEfglX4wzZGa1Z0/NNZ6nIpKdZbf1BT2LLgYS8xv8j3jbvjSseOyalrxHWSkGaO7c7zWdF/t/bg1UzDbX2dZc88OM5xAJiQ3SDT4drBL6Q9tVtancwmdnZcoByjD6uOeUfg9TIgozuBVeX8zGtaCbk5xZSreWTgTb8VBJ0SzhwdDl4KyNF0cJSUIT3nwPmLXWRVXMaIa5nxltVuegJyead5kyI3hW6lddmmPzqCDrKuDAV/0r5uxLoGjvRC1fyrkfgkjnu3p1MAql25fu/zeDpeLk6/xaqKHfog86/fXBZAob/BskSncxY6znXJ5TaJz9/oSaL3YHrRje2jkdAplME1DJnAaNSAkYRY1Zx5LlSkdLT/7IjUZDNS37shpI/MS1F7Sz0eCKDxg87nmhlfHA/icinW6Oo="
+                  />
+                </div>
+				<div class="row justify-content-center">
+					<div class="col-md-10">
+					  <!-- Form Title -->
+					  <div class="form-heading text-center">
+						<div class="title">Customers</div>
+					  </div>
+	
+					  <div id="MainContent_pnlCustomerDetails">
+						<!-- First & Last Name -->
+						<div class="row">
+						  <div class="col-md-12">
+							<label>Customer Name</label>
+							<input name="ctl00$MainContent$txtCustomerName" type="text" value="TestCustomer" id="MainContent_txtCustomerName" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-12">
+							<label>Website</label>
+							<input name="ctl00$MainContent$txtWebsite" type="text" value="asdf" id="MainContent_txtWebsite" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-12">
+							<label>Street Address</label>
+							<input name="ctl00$MainContent$txtAddress1" type="text" id="MainContent_txtAddress1" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-6">
+							<label>City</label>
+							<input name="ctl00$MainContent$txtCity" type="text" id="MainContent_txtCity" />
+						  </div>
+						  <div class="col-md-3">
+							<label>State</label>
+							<input name="ctl00$MainContent$txtState" type="text" id="MainContent_txtState" />
+						  </div>
+						  <div class="col-md-3">
+							<label>Zip Code</label>
+							<input name="ctl00$MainContent$txtZip" type="text" id="MainContent_txtZip" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Contact Name</label>
+							<input name="ctl00$MainContent$txtContactName" type="text" value="asdf" id="MainContent_txtContactName" />
+						  </div>
+						  <div class="col-md-6">
+							<label>Contact Type</label>
+							<select name="ctl00$MainContent$ddlContactType" id="MainContent_ddlContactType" class="form-control">
+							  <option value="-1">-- select one --</option>
+							  <option value="3">CofA Receipt</option>
+							  <option selected="selected" value="4">Miscellaneous</option>
+							  <option value="1">Payable &#189;</option>
+							  <option value="2">Purchaser</option>
+							</select>
+						  </div>
+						</div>
+	
+						<!-- Email -->
+						<div class="row">
+						  <div class="col-md-12">
+							<label>Email address</label>
+							<input name="ctl00$MainContent$txtContactEmail" type="text" value="fdas" id="MainContent_txtContactEmail" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Phone</label>
+							<input name="ctl00$MainContent$txtContactPhone" type="text" id="MainContent_txtContactPhone" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-6">Representative:</div>
+	
+						  <div class="col-md-6">
+							<select name="ctl00$MainContent$ddlRepresentative" id="MainContent_ddlRepresentative" class="form-control">
+							  <option value="-1">-- select one --</option>
+							  <option value="1">tFirst tLast</option>
+							  <option selected="selected" value="2">Bob Tester</option>
+							  <option value="3">Stu Smith</option>
+							  <option value="4">Jack Terrior</option>
+							</select>
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-12">
+							<label>Consignees</label>
+							<div>
+							  <table cellspacing="0" rules="all" border="1" id="MainContent_gvConsignees" style="width: 100%; border-collapse: collapse">
+								<tr>
+								  <th class="gvLotHeader" scope="col">Consignee Name</th>
+								  <th class="gvLotHeader" scope="col">Consignee Notes</th>
+								  <th scope="col">&nbsp;</th>
+								</tr>
+								<tr>
+								  <td>
+									<span id="MainContent_gvConsignees_lblConsigneeName_0" class="gvLotCol3">test con</span>
+								  </td>
+								  <td>
+									<span id="MainContent_gvConsignees_lblNotes_0" class="gvLotCol3">kasflasdljasd</span>
+								  </td>
+								  <td>
+									<a onclick="return confirm(&#39;Do you want to delete?&#39;);" id="MainContent_gvConsignees_lnkRemove_0" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvConsignees$ctl02$lnkRemove&#39;,&#39;&#39;)">Delete</a>
+								  </td>
+								</tr>
+								<tr>
+								  <td>
+									<select name="ctl00$MainContent$gvConsignees$ctl03$ddlConsignee" id="MainContent_gvConsignees_ddlConsignee" class="form-control">
+									  <option value="-1">-- select one --</option>
+									  <option value="1">itest con</option>
+									  <option value="2">iConsignee 516</option>
+									</select>
+								  </td>
+								  <td>
+									<input type="submit" name="ctl00$MainContent$gvConsignees$ctl03$btnAdd" value="Add" id="MainContent_gvConsignees_btnAdd" />
+								  </td>
+								  <td>&nbsp;</td>
+								</tr>
+							  </table>
+							</div>
+						  </div>
+						</div>
+						<br /><br />
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Order Contact Name</label>
+							<input name="ctl00$MainContent$txtOrderContactName" type="text" id="MainContent_txtOrderContactName" />
+						  </div>
+						  <div class="col-md-6">
+							<label>Order Contact Email </label>
+							<input name="ctl00$MainContent$txtOrderContactEmail" type="text" id="MainContent_txtOrderContactEmail" />
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-md-6">
+							<label>AP Contact 1 Name</label>
+							<input name="ctl00$MainContent$txtAPContactName" type="text" id="MainContent_txtAPContactName" />
+						  </div>
+						  <div class="col-md-6">
+							<label>AP Contact Email 1 </label>
+							<input name="ctl00$MainContent$txtAPContactEmail" type="text" id="MainContent_txtAPContactEmail" />
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-md-6">
+							<label>AP Contact 2 Name</label>
+							<input name="ctl00$MainContent$txtAPContactName2" type="text" id="MainContent_txtAPContactName2" />
+						  </div>
+						  <div class="col-md-6">
+							<label>AP Contact Email 2 </label>
+							<input name="ctl00$MainContent$txtAPContactEmail2" type="text" id="MainContent_txtAPContactEmail2" />
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Statement Contact Name</label>
+							<input name="ctl00$MainContent$txtStatementContactName" type="text" id="MainContent_txtStatementContactName" />
+						  </div>
+						  <div class="col-md-6">
+							<label>Statement Contact Email </label>
+							<input name="ctl00$MainContent$txtStatementContactEmail" type="text" id="MainContent_txtStatementContactEmail" />
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Order Confirmation Contact Name 1 </label>
+							<input name="ctl00$MainContent$txtOrderConfirmationName" type="text" value="occn" id="MainContent_txtOrderConfirmationName" />
+						  </div>
+						  <div class="col-md-6">
+							<label>Order Confirmation Contact Email 1 </label>
+							<input name="ctl00$MainContent$txtOrderConfirmationEmail" type="text" id="MainContent_txtOrderConfirmationEmail" />
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Order Confirmation Contact Name 2 </label>
+							<input name="ctl00$MainContent$txtOrderConfirmationName2" type="text" id="MainContent_txtOrderConfirmationName2" />
+						  </div>
+						  <div class="col-md-6">
+							<label>Order Confirmation Contact Email 2 </label>
+							<input name="ctl00$MainContent$txtOrderConfirmationEmail2" type="text" id="MainContent_txtOrderConfirmationEmail2" />
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-md-6">
+							<label>CofA Contact Name</label>
+							<input name="ctl00$MainContent$txtCofAContactName" type="text" value="ralph" id="MainContent_txtCofAContactName" />
+						  </div>
+						  <div class="col-md-6">
+							<label>CofA Contact Email </label>
+							<input name="ctl00$MainContent$txtCofAContactEmail" type="text" value="cce" id="MainContent_txtCofAContactEmail" />
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Label Request Contact Name</label>
+							<input name="ctl00$MainContent$txtLabelRequestContactName" type="text" id="MainContent_txtLabelRequestContactName" />
+						  </div>
+						  <div class="col-md-6">
+							<label>Label Request Contact Email </label>
+							<input name="ctl00$MainContent$txtLabelRequestContactEmail" type="text" id="MainContent_txtLabelRequestContactEmail" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-8">
+							<label class="control-label"><i class="fa fa-calendar"></i>Certification Rec'd Month/Day/Year</label>
+							<input name="ctl00$MainContent$txtCertificationDate" type="text" value="01/01/24" id="MainContent_txtCertificationDate" class="datepicker" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-4">
+							<label>Current Pricing Tier</label>
+							<select name="ctl00$MainContent$ddlCurrentPricingTier" id="MainContent_ddlCurrentPricingTier">
+							  <option value="-1">-- select one --</option>
+							  <option value="1">Standard</option>
+							  <option value="2">Preferred</option>
+							  <option selected="selected" value="3">Condor</option>
+							  <option value="4">Agrecom</option>
+							  <option value="5">Naturipe</option>
+							  <option value="6">Al DeNunzio (Chemtreat)</option>
+							  <option value="7">Pharmacann</option>
+							</select>
+						  </div>
+						  <div class="col-md-4">
+							<label>Previous Year Pricing Tier</label>
+							<span id="MainContent_lblPreviousYearPricingTier"></span>
+						  </div>
+						  <div class="col-md-4">
+							<label>2yrs Previous Pricing Tier</label>
+							<span id="MainContent_lblTwoYearsPreviousPricingTier"></span>
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Pricing Tier Notes</label>
+							<textarea name="ctl00$MainContent$txtPricingTierNotes" rows="2" cols="20" id="MainContent_txtPricingTierNotes" class="form-control">test pt notes</textarea>
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-12">
+							<label>Parts</label>
+							<div>
+							  <table cellspacing="0" rules="all" border="1" id="MainContent_gvPartsToCustomer" style="width: 100%; border-collapse: collapse">
+								<tr>
+								  <th class="gvLotHeader" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPartsToCustomer&#39;,&#39;Sort$PartName&#39;)">Part Name</a></th>
+								  <th class="gvLotHeader" scope="col">&nbsp;</th>
+								</tr>
+								<tr>
+								  <td>
+									<span id="MainContent_gvPartsToCustomer_lblPartName_0" class="gvLotCol3">AFCO 9311 ClO2 Solution</span>
+								  </td>
+								  <td>
+									<a onclick="return confirm(&#39;Do you want to delete?&#39;);" id="MainContent_gvPartsToCustomer_lnkRemove_0" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPartsToCustomer$ctl02$lnkRemove&#39;,&#39;&#39;)"
+									  >Delete</a
+									>
+								  </td>
+								</tr>
+								<tr>
+								  <td>
+									<span id="MainContent_gvPartsToCustomer_lblPartName_1" class="gvLotCol3">AFCO9311-55-I</span>
+								  </td>
+								  <td>
+									<a onclick="return confirm(&#39;Do you want to delete?&#39;);" id="MainContent_gvPartsToCustomer_lnkRemove_1" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPartsToCustomer$ctl03$lnkRemove&#39;,&#39;&#39;)"
+									  >Delete</a
+									>
+								  </td>
+								</tr>
+								<tr>
+								  <td>
+									<span id="MainContent_gvPartsToCustomer_lblPartName_2" class="gvLotCol3">AWCCD3000-15-2I</span>
+								  </td>
+								  <td>
+									<a onclick="return confirm(&#39;Do you want to delete?&#39;);" id="MainContent_gvPartsToCustomer_lnkRemove_2" href="javascript:__doPostBack(&#39;ctl00$MainContent$gvPartsToCustomer$ctl04$lnkRemove&#39;,&#39;&#39;)"
+									  >Delete</a
+									>
+								  </td>
+								</tr>
+								<tr>
+								  <td>
+									<select name="ctl00$MainContent$gvPartsToCustomer$ctl05$ddlPart" id="MainContent_gvPartsToCustomer_ddlPart">
+									  <option value="-1">*</option>
+									  <option value="1">AFCO 9311 ClO2 Solution</option>
+									  <option value="8">American Water Chemicals AWC D-303</option>
+									  <option value="16">Biosan 3000</option>
+									  <option value="24">AFCO9311-5</option>
+									  <option value="25">AFCO9311-55</option>
+									  <option value="26">AFCO9311-55-I</option>
+									  <option value="27">AFCO9311-5-I</option>
+									  <option value="28">AWCCD3000-15</option>
+									  <option value="29">AWCCD3000-15-2I</option>
+									  <option value="30">AWCCD3000-15-I</option>
+									  <option value="31">AWCCD3000-30</option>
+									  <option value="32">AWCCD3000-30-2I</option>
+									  <option value="33">AWCCD3000-30-I</option>
+									  <option value="34">AWCCD3000-330</option>
+									  <option value="35">AWCCD3000-330-TI</option>
+									  <option value="36">AWCCD3000-5</option>
+									  <option value="37">AWCCD3000-55</option>
+									  <option value="38">AWCCD3000-55-2I</option>
+									  <option value="39">AWCCD3000-55-I</option>
+									  <option value="40">AWCCD3000-5-RDI</option>
+									  <option value="41">BIOSAN3000-275</option>
+									  <option value="42">BIOSAN3000-275-RDIC</option>
+									  <option value="43">CDG -NO LABEL</option>
+									  <option value="44">CDG Aqua Dioxide</option>
+									  <option value="45">CDGAQUA-15</option>
+									  <option value="46">CDGAQUA-15-2I</option>
+									  <option value="47">CDGAQUA-15-I</option>
+									  <option value="48">CDGAQUA-15-RDI</option>
+									  <option value="49">CDGAQUA-1L</option>
+									  <option value="50">CDGAQUA-30</option>
+									  <option value="51">CDGAQUA-30-2I</option>
+									  <option value="52">CDGAQUA-30-I</option>
+									  <option value="53">CDGAQUA-30-RDI</option>
+									  <option value="54">CDGAQUA-30-RDIC</option>
+									  <option value="55">CDGAQUA-330</option>
+									  <option value="56">CDGAQUA-330-TI</option>
+									  <option value="57">CDGAQUA-5</option>
+									  <option value="58">CDGAQUA-55</option>
+									  <option value="59">CDGAQUA-55-2I</option>
+									  <option value="60">CDGAQUA-55-I</option>
+									  <option value="61">CDGAQUA-55-RDI</option>
+									  <option value="62">CDGAQUA-55-RDIC</option>
+									  <option value="63">CDGAQUA-5-RDI</option>
+									  <option value="64">CDG-C</option>
+									  <option value="65">CDG-C-PVDF</option>
+									  <option value="66">CDG-C-RD-BT</option>
+									  <option value="67">CDG-C-RD-Pail</option>
+									  <option value="68">CDG-CV</option>
+									  <option value="69">CDG-HF</option>
+									  <option value="70">CDG-I</option>
+									  <option value="71">CDG-I-RD-BT</option>
+									  <option value="72">CDG-I-RD-Pail</option>
+									  <option value="73">CDG-I-RD-Tote</option>
+									  <option value="74">CDG-NPSI</option>
+									  <option value="75">CDG Solution 3000</option>
+									  <option value="76">CDGSOL3000-15</option>
+									  <option value="77">CDGSOL3000-15-I</option>
+									  <option value="78">CDGSOL3000-15-RDI</option>
+									  <option value="79">CDGSOL3000-15-RDIC</option>
+									  <option value="80">CDGSOL3000-1L</option>
+									  <option value="81">CDGSOL3000-275</option>
+									  <option value="82">CDGSOL3000-275-RDI</option>
+									  <option value="83">CDGSOL3000-275-RDIC</option>
+									  <option value="84">CDGSOL3000-275-TI</option>
+									  <option value="85">CDGSOL3000-30</option>
+									  <option value="86">CDGSOL3000-30-I</option>
+									  <option value="87">CDGSOL3000-30-RDI</option>
+									  <option value="88">CDGSOL3000-30-RDIC</option>
+									  <option value="89">CDGSOL3000-330</option>
+									  <option value="90">CDGSOL3000-330-RDI</option>
+									  <option value="91">CDGSOL3000-330-RDIC</option>
+									  <option value="92">CDGSOL3000-330-TI</option>
+									  <option value="93">CDGSOL3000-5</option>
+									  <option value="94">CDGSOL3000-55</option>
+									  <option value="95">CDGSOL3000-55-2I</option>
+									  <option value="96">CDGSOL3000-55-I</option>
+									  <option value="97">CDGSOL3000-55-RDI</option>
+									  <option value="98">CDGSOL3000-55-RDIC</option>
+									  <option value="99">CDGSOL3000-5-I</option>
+									  <option value="100">CDGSOL3000-5-RDI</option>
+									  <option value="101">CDGSOL3000-5-RDIC</option>
+									  <option value="102">CDG-SP</option>
+									  <option value="103">CDG-TI</option>
+									  <option value="104">CDG-TST</option>
+									  <option value="105">CSISOL3000-1/2</option>
+									  <option value="106">CSISOL3000-15</option>
+									  <option value="107">CSISOL3000-15-I</option>
+									  <option value="108">CSISOL3000-15-RDIC</option>
+									  <option value="109">CSISOL3000-30</option>
+									  <option value="110">CSISOL3000-30-I</option>
+									  <option value="111">CSISOL3000-30-RDIC</option>
+									  <option value="112">CSISOL3000-330</option>
+									  <option value="113">CSISOL3000-330-TI</option>
+									  <option value="114">CSISOL3000-5</option>
+									  <option value="115">CSISOL3000-55</option>
+									  <option value="116">CSISOL3000-55-I</option>
+									  <option value="117">CSISOL3000-5-I</option>
+									  <option value="118">ChemTreat CL 3000</option>
+									  <option value="119">CTCL3000-15-I</option>
+									  <option value="120">CTCL3000-1L</option>
+									  <option value="121">CTCL3000-275</option>
+									  <option value="122">CTCL3000-30</option>
+									  <option value="123">CTCL3000-30-I</option>
+									  <option value="124">CTCL3000-330</option>
+									  <option value="125">CTCL3000-330-BT-BV</option>
+									  <option value="126">CTCL3000-330-BT-P</option>
+									  <option value="127">CTCL3000-330-TI</option>
+									  <option value="128">CTCL3000-5</option>
+									  <option value="129">CTCL3000-55</option>
+									  <option value="130">CTCL3000-55-2I</option>
+									  <option value="131">CTCL3000-55-I</option>
+									  <option value="132">ClorDiSys CSI Solution 3000</option>
+									  <option value="133">ChemTreat CN 3000 M</option>
+									  <option value="134">DeLaval Premium Dioxide 3000</option>
+									  <option value="135">DLPD3000-15-I</option>
+									  <option value="136">DLPD3000-30</option>
+									  <option value="137">DLPD3000-30-I</option>
+									  <option value="138">DLPD3000-330</option>
+									  <option value="139">DLPD3000-330-TI</option>
+									  <option value="140">DLPD3000-5</option>
+									  <option value="141">DLPD3000-55</option>
+									  <option value="142">DLPD3000-55-I</option>
+									  <option value="143">DLPD3000-5-I</option>
+									  <option value="144">DeLaval RediOx</option>
+									  <option value="145">DLRO3000-15-I</option>
+									  <option value="146">DLRO3000-30</option>
+									  <option value="147">DLRO3000-30-I</option>
+									  <option value="148">DLRO3000-330</option>
+									  <option value="149">DLRO3000-330-TI</option>
+									  <option value="150">DLRO3000-5</option>
+									  <option value="151">DLRO3000-55</option>
+									  <option value="152">DLRO3000-55-I</option>
+									  <option value="153">DLRO3000-5-I</option>
+									  <option value="154">Garratt-Callahan Formula 3080</option>
+									  <option value="155">G-CF3080-15-I</option>
+									  <option value="156">G-CF3080-15-RDI</option>
+									  <option value="157">G-CF3080-15-RDIC</option>
+									  <option value="158">G-CF3080-1L</option>
+									  <option value="159">G-CF3080-30</option>
+									  <option value="160">G-CF3080-30-I</option>
+									  <option value="161">G-CF3080-30-RDI</option>
+									  <option value="162">G-CF3080-30-RDIC</option>
+									  <option value="163">G-CF3080-330</option>
+									  <option value="164">G-CF3080-330-RDIC</option>
+									  <option value="165">G-CF3080-330-TI</option>
+									  <option value="166">G-CF3080-5</option>
+									  <option value="167">G-CF3080-55</option>
+									  <option value="168">G-CF3080-55-I</option>
+									  <option value="169">G-CF3080-55-RDI</option>
+									  <option value="170">G-CF3080-55-RDIC</option>
+									  <option value="171">G-CF3080-5-I</option>
+									  <option value="172">G-CF3080-5-RDI</option>
+									  <option value="173">G-CF3080-5-RDIC</option>
+									  <option value="174">GESO3000-15</option>
+									  <option value="175">GESO3000-15-I</option>
+									  <option value="176">GESO3000-15-RDIC</option>
+									  <option value="177">GESO3000-30</option>
+									  <option value="178">GESO3000-30-I</option>
+									  <option value="179">GESO3000-30-RDIC</option>
+									  <option value="180">GESO3000-330</option>
+									  <option value="181">GESO3000-330-RDIC</option>
+									  <option value="182">GESO3000-330-TI</option>
+									  <option value="183">GESO3000-5</option>
+									  <option value="184">GESO3000-55</option>
+									  <option value="185">GESO3000-55-I</option>
+									  <option value="186">GESO3000-55-RDIC</option>
+									  <option value="187">GESO3000-5-I</option>
+									  <option value="188">GESO3000-5-RDIC</option>
+									  <option value="189">Hydrite Hydri-Maize Enhance</option>
+									  <option value="190">HH-ME3000-15-I</option>
+									  <option value="191">HH-ME3000-30</option>
+									  <option value="192">HH-ME3000-30-I</option>
+									  <option value="193">HH-ME3000-330</option>
+									  <option value="194">HH-ME3000-330-TI</option>
+									  <option value="195">HH-ME3000-5</option>
+									  <option value="196">HH-ME3000-55</option>
+									  <option value="197">HH-ME3000-55-I</option>
+									  <option value="198">HH-ME3000-5-I</option>
+									  <option value="199">ICACD300-1/2</option>
+									  <option value="200">ICACD300-15</option>
+									  <option value="201">ICACD300-15-I</option>
+									  <option value="202">ICACD300-15-RDI</option>
+									  <option value="203">ICACD300-15-RDIC</option>
+									  <option value="204">ICACD300-30</option>
+									  <option value="205">ICACD300-30-I</option>
+									  <option value="206">ICACD300-330</option>
+									  <option value="207">ICACD300-330-TI</option>
+									  <option value="208">ICACD300-5</option>
+									  <option value="209">ICACD300-55</option>
+									  <option value="210">ICACD300-55-I</option>
+									  <option value="211">ICACD300-5-I</option>
+									  <option value="212">MPCD-15</option>
+									  <option value="213">MPCD-15-I</option>
+									  <option value="214">MPCD-30</option>
+									  <option value="215">MPCD-30-I</option>
+									  <option value="216">MPCD-330</option>
+									  <option value="217">MPCD-330-TI</option>
+									  <option value="218">MPCD-5</option>
+									  <option value="219">MPCD-55</option>
+									  <option value="220">MPCD-55-I</option>
+									  <option value="221">MPCD-5-I</option>
+									  <option value="222">NALCO 73002</option>
+									  <option value="223">N73002-15-2I</option>
+									  <option value="224">N73002-15-I</option>
+									  <option value="225">N73002-15-RDI</option>
+									  <option value="226">N73002-15-RDIC</option>
+									  <option value="227">N73002-1L</option>
+									  <option value="228">N73002-30</option>
+									  <option value="229">N73002-30-2I</option>
+									  <option value="230">N73002-30-I</option>
+									  <option value="231">N73002-30-RDIC</option>
+									  <option value="232">N73002-330</option>
+									  <option value="233">N73002-330-RDI</option>
+									  <option value="234">N73002-330-RDIC</option>
+									  <option value="235">N73002-330-TI</option>
+									  <option value="236">N73002-5</option>
+									  <option value="237">N73002-55</option>
+									  <option value="238">N73002-55-2I</option>
+									  <option value="239">N73002-55-I</option>
+									  <option value="240">N73002-55-RDI</option>
+									  <option value="241">N73002-55-RDIC</option>
+									  <option value="242">N73002-5-I</option>
+									  <option value="243">S660G-15</option>
+									  <option value="244">S660G-15-2I</option>
+									  <option value="245">S660G-15-I</option>
+									  <option value="246">S660G-1L</option>
+									  <option value="247">S660G-30</option>
+									  <option value="248">S660G-30-2I</option>
+									  <option value="249">S660G-30-I</option>
+									  <option value="250">S660G-330</option>
+									  <option value="251">S660G-330-TI</option>
+									  <option value="252">S660G-5</option>
+									  <option value="253">S660G-55</option>
+									  <option value="254">S660G-55-2I</option>
+									  <option value="255">S660G-55-I</option>
+									  <option value="256">S660G-5-I</option>
+									  <option value="257">SA660-15</option>
+									  <option value="258">SA660-15-2I</option>
+									  <option value="259">SA660-15-I</option>
+									  <option value="260">SA660-30</option>
+									  <option value="261">SA660-30-2I</option>
+									  <option value="262">SA660-30-I</option>
+									  <option value="263">SA660-330</option>
+									  <option value="264">SA660-330-TI</option>
+									  <option value="265">SA660-5</option>
+									  <option value="266">SA660-55</option>
+									  <option value="267">SA660-55-2I</option>
+									  <option value="268">SA660-55-I</option>
+									  <option value="269">SA660-5-I</option>
+									  <option value="270">Solenis BIOSPERSE CX7003</option>
+									  <option value="271">SBIOCX7003-15-2I</option>
+									  <option value="272">SBIOCX7003-15-I</option>
+									  <option value="273">SBIOCX7003-30</option>
+									  <option value="274">SBIOCX7003-30-2I</option>
+									  <option value="275">SBIOCX7003-30-I</option>
+									  <option value="276">SBIOCX7003-330</option>
+									  <option value="277">SBIOCX7003-330-TI</option>
+									  <option value="278">SBIOCX7003-5</option>
+									  <option value="279">SBIOCX7003-55</option>
+									  <option value="280">SBIOCX7003-55-2I</option>
+									  <option value="281">SBIOCX7003-55-I</option>
+									  <option value="282">SBIOCX7003-5-RDI</option>
+									  <option value="283">TriEst Tri-San</option>
+									  <option value="284">Veolia Water Technologies Spectrus OX3000</option>
+									  <option value="285">TETS-30</option>
+									  <option value="286">TETS-30-I</option>
+									  <option value="287">TETS-330</option>
+									  <option value="288">TETS-330-TI</option>
+									  <option value="289">TETS-5</option>
+									  <option value="290">TETS-55</option>
+									  <option value="291">TETS-55-I</option>
+									  <option value="292">TETS-5-I</option>
+									</select>
+								  </td>
+								  <td>
+									<input type="submit" name="ctl00$MainContent$gvPartsToCustomer$ctl05$btnAdd" value="Add" id="MainContent_gvPartsToCustomer_btnAdd" />
+								  </td>
+								</tr>
+							  </table>
+							</div>
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Notes</label>
+							<textarea name="ctl00$MainContent$txtNotes" rows="2" cols="20" id="MainContent_txtNotes" class="form-control">test reg notes</textarea>
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-6">
+							<label>Sub Registrant</label>
+							<input id="MainContent_CheckBox1" type="checkbox" name="ctl00$MainContent$CheckBox1" />
+						  </div>
+						  <div class="col-md-6">
+							<label>Revision Date</label>
+							<input name="ctl00$MainContent$TextBox4" type="text" id="MainContent_TextBox4" />
+						  </div>
+						</div>
+	
+						<div class="row">
+						  <div class="col-md-12">
+							<a name="i"></a>
+							<input type="file" multiple="multiple" name="ctl00$MainContent$FileUpload1" id="MainContent_FileUpload1" />
+							<input type="submit" name="ctl00$MainContent$btnUpload" value="Upload" id="MainContent_btnUpload" />
+							<div></div>
+						  </div>
+						</div>
+	
+						<!-- Button -->
+						<div class="row">
+						  <div class="col-md-12">
+							<input type="submit" name="ctl00$MainContent$btnAddUpdate" value="Update Customer" id="MainContent_btnAddUpdate" class="adam-button" />
+						  </div>
+						</div>
+					  </div>
+					  <!-- <script type="text/javascript">
+						fixFormLabels();
+					  </script>
+	
+					  <script type="text/javascript">
+						//<![CDATA[
+	
+						theForm.oldSubmit = theForm.submit;
+						theForm.submit = WebForm_SaveScrollPositionSubmit;
+	
+						theForm.oldOnSubmit = theForm.onsubmit;
+						theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+	
+						theForm.oldOnLoad = window.onload;
+						window.onload = WebForm_RestoreScrollPosition;
+						//]]>
+					  </script> -->
+					</div>
+				</div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="copyright-text">
+        <div class="clearfix">© 2023 CDG Environmental Services Provided by: <a href="http://www.cylutions.com"> CyLutions </a></div>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Form JS -->
+    <script src="js/formscript.js" type="text/javascript"></script>
+  </body>
+</html>

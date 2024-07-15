@@ -1,27 +1,46 @@
-var inputs = document.querySelectorAll('input[type="text"], input[type="datepicker"], input[type="file"], input[type="textarea"], input[type="password"], input[type="email"], input[type="number"]');
-infoTooltip = document.querySelectorAll('.info-tooltip'), body = document.querySelector('body');
+// Select the input elements and tooltips
+var inputs = document.querySelectorAll('input[type="text"], input[type="date"], input[type="file"], input[type="textarea"], input[type="password"], input[type="email"], input[type="number"]');
+var infoTooltip = document.querySelectorAll('.info-tooltip');
+var body = document.querySelector('body');
 
-//Inputs underline animation
+// Input underline animation
 if (inputs) {
-    for (var i = 0; i < inputs.length; i++) {
-        inputs[i].previousElementSibling.classList.add('floating-label');
-        inputs[i].addEventListener('focusin', function () {
-            this.previousElementSibling.classList.add('label-active');
-        })
-        inputs[i].addEventListener('focusout', function () {
-            if (!(this.value == '')) {
-                this.classList.add('input-active');
+    inputs.forEach(function(input) {
+        // Add floating label class to the previous sibling label
+        var previousSibling = input.previousElementSibling;
+        if (previousSibling && previousSibling.tagName.toLowerCase() === 'label') {
+            previousSibling.classList.add('floating-label');
+        }
+
+        // Add label-active class if input has a value on load
+        if (input.value !== '') {
+            if (previousSibling) {
+                previousSibling.classList.add('label-active');
             }
-            else if (this.value == '') {
-                this.classList.remove('input-active');
-                this.previousElementSibling.classList.remove('label-active');
+            input.classList.add('input-active');
+        }
+
+        // Add event listener for focusin
+        input.addEventListener('focusin', function() {
+            if (previousSibling) {
+                previousSibling.classList.add('label-active');
             }
-            else {
-                this.previousElementSibling.classList.remove('label-active');
+        });
+
+        // Add event listener for focusout
+        input.addEventListener('focusout', function() {
+            if (input.value !== '') {
+                input.classList.add('input-active');
+            } else {
+                input.classList.remove('input-active');
+                if (previousSibling) {
+                    previousSibling.classList.remove('label-active');
+                }
             }
-        })
-    }
+        });
+    });
 }
+
 
 //Required inputs
 if (inputs) {
