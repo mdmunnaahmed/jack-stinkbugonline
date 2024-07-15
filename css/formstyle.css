@@ -72,7 +72,7 @@ form {
 /* ============ LABEL =========== */
 label {
     color: #898989;
-    font-size: 14px;
+    font-size: 14px ;
     font-weight: 300;
     transition: all .3s cubic-bezier(.64, .09, .08, 1);
     margin: 30px 0 30px;
@@ -86,6 +86,7 @@ label {
     padding-left: 7px;
     padding-right: 7px;
     margin-left: 10px;
+    font-size: 14px;
 }
 .label-active {
     -webkit-transform: translateY(-38px);
@@ -93,7 +94,7 @@ label {
     font-size: 11px;
     color: #898989;
     background-color: white;
-    z-index: 33;
+    z-index: 3;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -109,33 +110,32 @@ input:valid ~ label {
 }
 .label-required:before {
     content: '*';
-    color: #2fb74e;
+    color: red;
     position: absolute;
     right: 0px;
 }
 /* ============ INPUT =========== */
-input {
+input[type=email],
+input[type=text],
+input[type=datepicker]
+input[type=password],
+input[type=number] {
     position: relative;
     z-index: 2;
     margin-bottom: 30px;
     width: 100%;
     display: block;
-    border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    border: solid 1px #d2d2d2;
+    border: 1px solid #d2d2d2;
     will-change: background-position;
     transition: all .3s cubic-bezier(.64, .09, .08, 1);
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2fb74e 96%); */
     background-color: transparent;
-    background-position: -1920px 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
     color: #333;
     font-size: 14px;
     font-weight: 300;
+    outline: 0;
 }
-
 input[type=email].input-active,
 input[type=email]:focus,
 input[type=text].input-active,
@@ -169,20 +169,10 @@ input[type=number]:focus:after {
     position: relative;
     z-index: 2;
     margin-bottom: 30px;
-    width: 100%;
     display: block;
-    border: none;
-    /* padding: 10px 0; */
-    border: solid 1px #d2d2d2;
-    will-change: background-position;
+    border-color: #d2d2d2;
     transition: all .3s cubic-bezier(.64, .09, .08, 1);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #d2d2d2 96%);
-    background-position: -1920px 0;
-    background-size: 100%;
-    background-repeat: no-repeat;
     color: #898989;
-    font-size: 14px;
-    font-weight: 300;
 }
 
 input[type=radio]:after,
@@ -972,4 +962,12 @@ select:focus {
         padding-inline: 10px;
         font-size: 12px;
     }
+}
+
+input[type=password] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
