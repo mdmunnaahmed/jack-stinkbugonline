@@ -39,7 +39,7 @@
     height: 30px;
 }
 .icon.icon-primary {
-    color: #9c27b0;
+    color: #2fb74e;
     font-size: 24px;
     float: left;
     padding-right: 16px;
@@ -57,20 +57,17 @@ form {
     z-index: 2;
     margin: 0;
     width: 100%;
-    height: 41px;
+    height: 40px;
     display: block;
-    border: none;
     color: #898989;
     padding: 10px 0;
-    will-change: background-position;
     transition: all .3s cubic-bezier(.64, .09, .08, 1);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 97%, #d2d2d2 97%);
-    background-position: -100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
     font-size: 14px;
-    font-weight: 100;
-    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #2fb74e;
 }
 /* ============ LABEL =========== */
 label {
@@ -97,6 +94,9 @@ label {
     color: #898989;
     background-color: white;
     z-index: 33;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     
 }
 input:valid ~ label {
@@ -109,15 +109,14 @@ input:valid ~ label {
 }
 .label-required:before {
     content: '*';
-    color: #9c27b0;
+    color: #2fb74e;
     position: absolute;
     right: 0px;
 }
 /* ============ INPUT =========== */
 input[type=email],
 input[type=text],
-input[type=datepicker],
-input[type=textarea],
+input[type=datepicker]
 input[type=password],
 input[type=number] {
     position: relative;
@@ -188,14 +187,7 @@ input[type=number]:focus:after {
     font-size: 14px;
     font-weight: 300;
 }
-input[type=email]::-webkit-input-placeholder,
-input[type=text]::-webkit-input-placeholder,
-input[type=datepicker]::-webkit-input-placeholder,
-input[type=textarea]::-webkit-input-placeholder,
-input[type=password]::-webkit-input-placeholder,
-input[type=number]::-webkit-input-placeholder {
-    transition: all .2s cubic-bezier(.64, .09, .08, 1);
-}
+
 input[type=radio]:after,
 input[type=radio]:before {
     content: '';
@@ -213,7 +205,7 @@ input[type=checkbox]:before {
     content: '';
     width: 20px;
     height: 20px;
-    border: 1px solid #9c27b0;
+    border: 1px solid #2fb74e;
     border-radius: 3px;
     background: #fff;
     position: absolute;
@@ -223,14 +215,14 @@ input[type=checkbox]:before {
 input[type=checkbox]:after {
     content: '✓';
     color: #fff;
-    background: #9c27b0;
+    background: #2fb74e;
     position: absolute;
     top: -2px;
     margin-left: -1px;
     left: 0;
     width: 20px;
     height: 20px;
-    border: 1px solid #9c27b0;
+    border: 1px solid #2fb74e;
     border-radius: 3px;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -260,11 +252,11 @@ input[type=radio]:before {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 1px solid #9c27b0;
+    border: 1px solid #2fb74e;
     display: inline-block;
     top: -5px;
     left: -8px;
-    background-image: radial-gradient(circle, #9c27b0 60%, #fff 70%);
+    background-image: radial-gradient(circle, #2fb74e 60%, #fff 70%);
     background-size: 0;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -320,18 +312,18 @@ input[type=file] {
     margin-top: 3px;
     padding: 8px 14px;
     float: right;
-    background: #9c27b0;
+    background: #2fb74e;
     border-radius: 3px;
     color: #fff;
-    border: 1px solid #9c27b0;
+    border: 1px solid #2fb74e;
     font-weight: 300;
     transition: all .3s cubic-bezier(.64, .09, .08, 1);
     box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
 }
 .adam-button2:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-    background: #9c27b0;
-    border: 1px solid #9c27b0;
+    background: #2fb74e;
+    border: 1px solid #2fb74e;
 }
 .clear-button {
     position: absolute;
@@ -564,7 +556,7 @@ input[type=file] {
     font-size: 32px;
 }
 .rating.star .rating-wrapper > input:checked ~ label {
-    color: #9c27b0;
+    color: #2fb74e;
 }
 .rating.star .rating-wrapper > input:hover ~ label {
     color: #f55a4e;
@@ -764,22 +756,22 @@ li.active:before {
 .datepicker table tr td.active:hover[disabled],
 .datepicker table tr td.active.disabled[disabled],
 .datepicker table tr td.active.disabled:hover[disabled] {
-    background-color: #9c27b0;
+    background-color: #2fb74e;
 }
 .datepicker table tr td.active,
 .datepicker table tr td.active:hover,
 .datepicker table tr td.active.disabled,
 .datepicker table tr td.active.disabled:hover {
-    background-color: #9c27b0;
-    background-image: -moz-linear-gradient(to bottom, #9c27b0, #9c27b0);
-    background-image: -ms-linear-gradient(to bottom, #9c27b0, #9c27b0);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c27b0), to(#9c27b0));
-    background-image: -webkit-linear-gradient(to bottom, #9c27b0, #9c27b0);
-    background-image: -o-linear-gradient(to bottom, #9c27b0, #9c27b0);
-    background-image: linear-gradient(to bottom, #9c27b0, #9c27b0);
+    background-color: #2fb74e;
+    background-image: -moz-linear-gradient(to bottom, #2fb74e, #2fb74e);
+    background-image: -ms-linear-gradient(to bottom, #2fb74e, #2fb74e);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2fb74e), to(#2fb74e));
+    background-image: -webkit-linear-gradient(to bottom, #2fb74e, #2fb74e);
+    background-image: -o-linear-gradient(to bottom, #2fb74e, #2fb74e);
+    background-image: linear-gradient(to bottom, #2fb74e, #2fb74e);
     background-repeat: repeat-x;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#08c', endColorstr='#0044cc', GradientType=0);
-    border-color: #9c27b0 #9c27b0 #9c27b0;
+    border-color: #2fb74e #2fb74e #2fb74e;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
     color: #fff;
@@ -886,7 +878,8 @@ input[type="submit"]:hover {
     background-color: transparent;
     border-color: #ececefcf;
 }
-.right-content-wrapper #MainContent_pnlPricingTiers table tr th {
+.right-content-wrapper #MainContent_pnlPricingTiers table tr th,
+#MainContent_gvConsignees tr th {
     color: #111827;
     font-weight: 500;
     font-size: 14px;
@@ -912,14 +905,43 @@ input[type="submit"]:hover {
     outline: 0 !important;
     color: #2fb74e;
 }
-#MainContent_pnlPricingTiers select {
+
+#MainContent_pnlPricingTiers select,
+#MainContent_ddlCurrentPricingTier,
+#MainContent_gvPartsToCustomer_ddlPart {
     padding: 5px 10px;
     border-radius: 5px;
     border-color: #d2d2d2;
-    color: #2fb74e;
+    /* color: #2fb74e; */
     outline: 0;
     color: #898989;
 }
+#MainContent_CheckBox1 {
+    margin-inline: 5px;
+}
+#MainContent_ddlContactType {
+    margin-bottom: 30px;
+}
+textarea {
+    padding: 5px 0px 0 15px !important;
+}
+textarea:focus {
+    background-color: #2fb74e;
+}
+
+select {
+    border: 1px solid #d2d2d2;
+    height: 40px;
+    padding: 0 10px !important;
+    color: #898989;
+    line-height: 1;
+}
+
+select:focus {
+    border-color: #2fb74faa !important;
+    color: #2fb74e !important;
+    padding: 0 10px !important;
+ }
 @media (min-width: 1600px) {
     #MainContent_pnlCustomerGrid,
     #MainContent_pnlWarehouseGrid,
