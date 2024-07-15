@@ -970,4 +970,10 @@ input[type=password] {
     border: 1px solid #d2d2d2;
     padding: 10px 15px;
     border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+#MainContent_pnlCarrierGrid {
+    overflow-x: auto;
 }
