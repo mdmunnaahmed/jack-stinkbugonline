@@ -114,11 +114,7 @@ input:valid ~ label {
     right: 0px;
 }
 /* ============ INPUT =========== */
-input[type=email],
-input[type=text],
-input[type=datepicker]
-input[type=password],
-input[type=number] {
+input {
     position: relative;
     z-index: 2;
     margin-bottom: 30px;
@@ -139,6 +135,7 @@ input[type=number] {
     font-size: 14px;
     font-weight: 300;
 }
+
 input[type=email].input-active,
 input[type=email]:focus,
 input[type=text].input-active,
