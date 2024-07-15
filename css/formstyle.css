@@ -891,8 +891,8 @@ input[type="submit"]:hover {
     padding: 7px 10px;
     outline: 0 !important;
     color: #2fb74e;
+    background-color: #fff;
 }
-
 #MainContent_pnlPricingTiers select,
 #MainContent_ddlCurrentPricingTier,
 #MainContent_gvPartsToCustomer_ddlPart {
@@ -915,7 +915,6 @@ textarea {
 textarea:focus {
     background-color: #2fb74e;
 }
-
 select {
     border: 1px solid #d2d2d2;
     height: 40px;
@@ -923,12 +922,31 @@ select {
     color: #898989;
     line-height: 1;
 }
-
 select:focus {
     border-color: #2fb74faa !important;
     color: #2fb74e !important;
     padding: 0 10px !important;
  }
+
+ input[type=password] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d2d2d2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+}
+#MainContent_pnlCarrierGrid,
+#MainContent_gvPartsToCustomer,
+#MainContent_gvConsignees {
+    overflow-x: auto;
+}
+select#MainContent_gvConsignees_ddlConsignee {
+    min-width: 150px;
+}
+
 @media (min-width: 1600px) {
     #MainContent_pnlCustomerGrid,
     #MainContent_pnlWarehouseGrid,
@@ -962,18 +980,15 @@ select:focus {
         padding-inline: 10px;
         font-size: 12px;
     }
-}
+    #MainContent_btnAddUpdate {
+        text-align: center;
+    }
 
-input[type=password] {
-    width: 100%;
-    height: 40px;
-    border: 1px solid #d2d2d2;
-    padding: 10px 15px;
-    border-radius: 5px;
-    position: relative;
-    z-index: 2;
-    background-color: transparent;
-}
-#MainContent_pnlCarrierGrid {
-    overflow-x: auto;
+    #MainContent_gvPartsToCustomer,
+    #MainContent_gvConsignees {
+        display: block;
+    }
+    #MainContent_btnAddUpdate {
+        margin-top: 40px;
+    }
 }
