@@ -807,9 +807,15 @@ li.active:before {
 #MainContent_pnlPartGrid,
 #MainContent_pnlOrderGrid,
 #MainContent_pnlFacilityGrid,
-#MainContent_pnlRepresentativeGrid {
+#MainContent_pnlRepresentativeGrid,
+#MainContent_pnlCustomerDetails {
     height: 400px;
     overflow-y: auto;
+}
+
+#MainContent_pnlCustomerDetails {
+    padding-right: 15px;
+    padding-top: 4px;
 }
 .right-content-wrapper table tr:nth-of-type(odd){
     background-color: #f9fafb;
@@ -873,7 +879,8 @@ input[type="submit"]:hover {
     border-color: #ececefcf;
 }
 .right-content-wrapper #MainContent_pnlPricingTiers table tr th,
-#MainContent_gvConsignees tr th {
+#MainContent_gvConsignees tr th,
+#MainContent_gvPartsToCustomer tr th {
     color: #111827;
     font-weight: 500;
     font-size: 14px;
@@ -906,7 +913,6 @@ input[type="submit"]:hover {
     padding: 5px 10px;
     border-radius: 5px;
     border-color: #d2d2d2;
-    /* color: #2fb74e; */
     outline: 0;
     color: #898989;
 }
@@ -947,6 +953,8 @@ select:focus {
 }
 #MainContent_pnlCarrierGrid,
 #MainContent_gvPartsToCustomer,
+#MainContent_gvConsignees,
+#MainContent_gvPartsToCustomer,
 #MainContent_gvConsignees {
     overflow-x: auto;
 }
@@ -963,7 +971,8 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_pnlPartGrid,
     #MainContent_pnlOrderGrid,
     #MainContent_pnlFacilityGrid,
-    #MainContent_pnlRepresentativeGrid {
+    #MainContent_pnlRepresentativeGrid,
+    #MainContent_pnlCustomerDetails {
         height: 580px;
     }
 }
