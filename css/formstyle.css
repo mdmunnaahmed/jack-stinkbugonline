@@ -115,6 +115,12 @@ input:valid ~ label {
     background-color: white;
     z-index: 33;
 }
+#MainContent_pnlConsigneeDetails input:valid ~ label {
+    transform: translateY(0px);
+    font-size: 14px;
+    /* color: #898989; */
+    margin: 10px 0;
+}
 .label-required:before {
     content: '*';
     color: red;
@@ -817,14 +823,16 @@ li.active:before {
 #MainContent_pnlFacilityGrid,
 #MainContent_pnlRepresentativeGrid,
 #MainContent_pnlCustomerDetails,
-#MainContent_pnlCarrierDetails {
+#MainContent_pnlCarrierDetails,
+#MainContent_pnlConsigneeDetails {
     height: 400px;
     overflow-y: auto;
 }
 #MainContent_pnlCustomerDetails #MainContent_btnAddUpdate{
     margin-bottom: 20px;
 }
-#MainContent_pnlCustomerDetails {
+#MainContent_pnlCustomerDetails,
+#MainContent_pnlConsigneeDetails {
     padding-right: 15px;
     padding-top: 4px;
 }
@@ -981,7 +989,7 @@ select#MainContent_gvConsignees_ddlConsignee {
 #MainContent_ddlPickupRequest {
     margin-bottom: 30px;
 }
-#MainContent_pnlCarrierDetails {
+#MainContent_pnlCarrierDetails{
     padding-right: 15px;
 }
 
@@ -993,7 +1001,8 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_pnlFacilityGrid,
     #MainContent_pnlRepresentativeGrid,
     #MainContent_pnlCustomerDetails,
-    #MainContent_pnlCarrierDetails {
+    #MainContent_pnlCarrierDetails,
+    #MainContent_pnlConsigneeDetails {
         height: 580px;
     }
 }
@@ -1031,4 +1040,9 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_btnAddUpdate {
         margin-top: 40px;
     }
+}
+
+
+#MainContent_pnlConsigneeDetails label {
+    /* margin: 0; */
 }
