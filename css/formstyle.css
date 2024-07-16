@@ -118,7 +118,6 @@ input:valid ~ label {
 #MainContent_pnlConsigneeDetails input:valid ~ label {
     transform: translateY(0px);
     font-size: 14px;
-    /* color: #898989; */
     margin: 10px 0;
 }
 .label-required:before {
@@ -863,6 +862,28 @@ li.active:before {
     border-radius: 5px;
     border-top-color: #b9e6c6;
 }
+.right-content-wrapper #MainContent_rbCaOrNonCa {
+    border-radius: 0;
+    border: none;
+}
+.right-content-wrapper #MainContent_rbCaOrNonCa label {
+    transform: translateY(0px);
+    font-size: 14px;
+    margin: 10px 0;
+
+}
+
+.right-content-wrapper #MainContent_rbCaOrNonCa tr,
+.right-content-wrapper #MainContent_rbCaOrNonCa tr td {
+    border: none;
+    background-color: transparent;
+    padding-inline: 0;
+}
+.right-content-wrapper #MainContent_rbCaOrNonCa tr td {
+    padding-right: 12px;
+
+}
+
 .right-content-wrapper table th {
     position: sticky;
     top: -.5px;
@@ -897,9 +918,7 @@ input[type="submit"]:hover {
     background-color: transparent;
     border-color: #ececefcf;
 }
-.right-content-wrapper #MainContent_pnlPricingTiers table tr th,
-#MainContent_gvConsignees tr th,
-#MainContent_gvPartsToCustomer tr th {
+.right-content-wrapper table tr th{
     color: #111827;
     font-weight: 500;
     font-size: 14px;
@@ -953,6 +972,8 @@ select {
     padding: 0 10px !important;
     color: #898989;
     line-height: 1;
+    outline: none;
+    border-radius: 5px;
 }
 select:focus {
     border-color: #2fb74faa !important;
@@ -974,8 +995,12 @@ select:focus {
 #MainContent_gvPartsToCustomer,
 #MainContent_gvConsignees,
 #MainContent_gvPartsToCustomer,
-#MainContent_gvConsignees {
+#MainContent_gvConsignees,
+#MainContent_gvPartPrices {
     overflow-x: auto;
+}
+#MainContent_pnlPartDetails #MainContent_btnAddUpdate{
+    margin-top: 0px;
 }
 #MainContent_ddlCurrentPricingTier {
     font-size: 14px;
@@ -992,7 +1017,12 @@ select#MainContent_gvConsignees_ddlConsignee {
 #MainContent_pnlCarrierDetails{
     padding-right: 15px;
 }
-
+#MainContent_gvPartPrices_txtBasePrice {
+    margin-bottom: 0;
+}
+#MainContent_gvPartPrices a {
+    margin-inline: 2px;
+}
 @media (min-width: 1600px) {
     #MainContent_pnlCustomerGrid,
     #MainContent_pnlWarehouseGrid,
@@ -1034,11 +1064,15 @@ select#MainContent_gvConsignees_ddlConsignee {
     }
 
     #MainContent_gvPartsToCustomer,
-    #MainContent_gvConsignees {
+    #MainContent_gvConsignees,
+    #MainContent_gvPartPrices {
         display: block;
     }
     #MainContent_btnAddUpdate {
         margin-top: 40px;
+    }
+    #MainContent_pnlPartDetails #MainContent_btnAddUpdate {
+        margin-top: 30px;
     }
 }
 
