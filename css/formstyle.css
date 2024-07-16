@@ -88,6 +88,13 @@ label {
     margin-left: 10px;
     font-size: 14px;
 }
+@media (max-width: 1199px) {
+    #MainContent_pnlCustomerDetails .floating-label {
+        padding-left: 3px;
+    }
+}
+
+
 .label-active {
     -webkit-transform: translateY(-38px);
     transform: translateY(-38px);
@@ -942,6 +949,9 @@ select:focus {
 #MainContent_gvPartsToCustomer,
 #MainContent_gvConsignees {
     overflow-x: auto;
+}
+#MainContent_ddlCurrentPricingTier {
+    font-size: 14px;
 }
 select#MainContent_gvConsignees_ddlConsignee {
     min-width: 150px;
