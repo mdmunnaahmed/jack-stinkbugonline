@@ -824,7 +824,8 @@ li.active:before {
 #MainContent_pnlCustomerDetails,
 #MainContent_pnlCarrierDetails,
 #MainContent_pnlConsigneeDetails,
-#MainContent_pnlPartDetails {
+#MainContent_pnlPartDetails,
+#MainContent_pnlDrumSizes {
     height: 400px;
     overflow-y: auto;
 }
@@ -1037,6 +1038,9 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_pnlPartDetails {
         height: 580px;
     }
+    #MainContent_pnlDrumSizes {
+        height: 520px;
+    }
 }
 @media (max-width: 991px) {
     #MainContent_pnlCustomerGrid,
@@ -1044,7 +1048,8 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_pnlPartGrid,
     #MainContent_pnlOrderGrid,
     #MainContent_pnlFacilityGrid,
-    #MainContent_pnlRepresentativeGrid{
+    #MainContent_pnlRepresentativeGrid,
+    #MainContent_pnlDrumSizes{
         height: 100%;
     }
     .right-content-wrapper table th {
