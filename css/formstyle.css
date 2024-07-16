@@ -823,7 +823,8 @@ li.active:before {
 #MainContent_pnlRepresentativeGrid,
 #MainContent_pnlCustomerDetails,
 #MainContent_pnlCarrierDetails,
-#MainContent_pnlConsigneeDetails {
+#MainContent_pnlConsigneeDetails,
+#MainContent_pnlPartDetails {
     height: 400px;
     overflow-y: auto;
 }
@@ -831,7 +832,8 @@ li.active:before {
     margin-bottom: 20px;
 }
 #MainContent_pnlCustomerDetails,
-#MainContent_pnlConsigneeDetails {
+#MainContent_pnlConsigneeDetails,
+#MainContent_pnlPartDetails {
     padding-right: 15px;
     padding-top: 4px;
 }
@@ -980,7 +982,6 @@ select:focus {
     color: #2fb74e !important;
     padding: 0 10px !important;
  }
-
  input[type=password] {
     width: 100%;
     height: 40px;
@@ -1032,7 +1033,8 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_pnlRepresentativeGrid,
     #MainContent_pnlCustomerDetails,
     #MainContent_pnlCarrierDetails,
-    #MainContent_pnlConsigneeDetails {
+    #MainContent_pnlConsigneeDetails,
+    #MainContent_pnlPartDetails {
         height: 580px;
     }
 }
@@ -1074,9 +1076,4 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_pnlPartDetails #MainContent_btnAddUpdate {
         margin-top: 30px;
     }
-}
-
-
-#MainContent_pnlConsigneeDetails label {
-    /* margin: 0; */
 }
