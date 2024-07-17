@@ -825,7 +825,8 @@ li.active:before {
 #MainContent_pnlCarrierDetails,
 #MainContent_pnlConsigneeDetails,
 #MainContent_pnlPartDetails,
-#MainContent_pnlDrumSizes {
+#MainContent_pnlDrumSizes,
+#MainContent_pnlOrderDetails {
     height: 400px;
     overflow-y: auto;
 }
@@ -834,7 +835,8 @@ li.active:before {
 }
 #MainContent_pnlCustomerDetails,
 #MainContent_pnlConsigneeDetails,
-#MainContent_pnlPartDetails {
+#MainContent_pnlPartDetails,
+#MainContent_pnlOrderDetails {
     padding-right: 15px;
     padding-top: 4px;
 }
@@ -998,7 +1000,9 @@ select:focus {
 #MainContent_gvConsignees,
 #MainContent_gvPartsToCustomer,
 #MainContent_gvConsignees,
-#MainContent_gvPartPrices {
+#MainContent_gvPartPrices,
+#MainContent_gvPartsToOrder,
+.MainContent_gvPartsToOrder-wrapper {
     overflow-x: auto;
 }
 #MainContent_pnlPartDetails #MainContent_btnAddUpdate{
@@ -1035,7 +1039,8 @@ select#MainContent_gvConsignees_ddlConsignee {
     #MainContent_pnlCustomerDetails,
     #MainContent_pnlCarrierDetails,
     #MainContent_pnlConsigneeDetails,
-    #MainContent_pnlPartDetails {
+    #MainContent_pnlPartDetails,
+    #MainContent_pnlOrderDetails {
         height: 580px;
     }
     #MainContent_pnlDrumSizes {
@@ -1082,3 +1087,28 @@ select#MainContent_gvConsignees_ddlConsignee {
         margin-top: 30px;
     }
 }
+
+#MainContent_gvPartsToOrder input {
+    margin: 0;
+}
+#MainContent_rbBilledYN tr {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    background-color: #b9e6c6;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+    background: #2fb74e !important;
+    border-color: #2fb74e !important;
+    color: #ffffff !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
