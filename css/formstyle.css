@@ -1048,15 +1048,6 @@ select#MainContent_gvConsignees_ddlConsignee {
     }
 }
 @media (max-width: 991px) {
-    #MainContent_pnlCustomerGrid,
-    #MainContent_pnlWarehouseGrid,
-    #MainContent_pnlPartGrid,
-    #MainContent_pnlOrderGrid,
-    #MainContent_pnlFacilityGrid,
-    #MainContent_pnlRepresentativeGrid,
-    #MainContent_pnlDrumSizes{
-        height: 100%;
-    }
     .right-content-wrapper table th {
         position:initial;
     }
@@ -1075,16 +1066,39 @@ select#MainContent_gvConsignees_ddlConsignee {
         text-align: center;
     }
 
-    #MainContent_gvPartsToCustomer,
-    #MainContent_gvConsignees,
-    #MainContent_gvPartPrices {
-        display: block;
-    }
     #MainContent_btnAddUpdate {
         margin-top: 40px;
     }
     #MainContent_pnlPartDetails #MainContent_btnAddUpdate {
         margin-top: 30px;
+    }
+    #MainContent_pnlWarehouseDetails #MainContent_btnAddUpdate {
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #MainContent_pnlCustomerGrid,
+    #MainContent_pnlWarehouseGrid,
+    #MainContent_pnlPartGrid,
+    #MainContent_pnlOrderGrid,
+    #MainContent_pnlFacilityGrid,
+    #MainContent_pnlRepresentativeGrid,
+    #MainContent_pnlDrumSizes,
+    #MainContent_pnlCustomerDetails,
+    #MainContent_pnlCarrierDetails,
+    #MainContent_pnlConsigneeDetails,
+    #MainContent_pnlPartDetails,
+    #MainContent_pnlOrderDetails {
+        height: 100%;
+    }
+    #MainContent_gvPartsToCustomer,
+    #MainContent_gvConsignees,
+    #MainContent_gvPartPrices {
+        display: block;
+    }
+    #table#MainContent_gvParts {
+        overflow-x: auto;
     }
 }
 
