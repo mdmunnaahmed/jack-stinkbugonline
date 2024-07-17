@@ -1093,12 +1093,15 @@ select#MainContent_gvConsignees_ddlConsignee {
         height: 100%;
     }
     #MainContent_gvPartsToCustomer,
-    #MainContent_gvConsignees,
-    #MainContent_gvPartPrices {
+    #MainContent_gvPartPrices,
+    #MainContent_gvConsignees {
         display: block;
     }
     #table#MainContent_gvParts {
         overflow-x: auto;
+    }
+    #MainContent_pnlOrderDetails {
+        padding-right: 0;
     }
 }
 
