@@ -838,7 +838,7 @@ li.active:before {
 #MainContent_pnlPartDetails,
 #MainContent_pnlOrderDetails {
     padding-right: 15px;
-    padding-top: 4px;
+    padding-top: 10px;
 }
 .right-content-wrapper table tr:nth-of-type(odd){
     background-color: #f9fafb;

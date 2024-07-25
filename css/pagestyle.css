@@ -177,6 +177,11 @@ new CSS start here 13/07/2024
     background-color: #39973b;
     color: #fff;
 }
+
+input#MainContent_btnUpload {
+    min-width: 180px;
+}
+
 @media (max-width: 991px) {
     .copyright-text {
         padding-top: 50px;
